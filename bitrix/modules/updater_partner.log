@@ -1,0 +1,726 @@
+2017-12-28 17:02:42 -  - exec CUpdateClientPartner::SearchModulesEx
+2017-12-28 17:02:42 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 17:02:42 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.0.9%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.0%2CN%3Bclouds%2C17.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.0%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.0.9%2CN%3Bperfmon%2C17.0.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.0.6%2CN%3Bsocialservices%2C17.1.4%2CN%3Btranslate%2C15.0.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 17:02:42 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 17:02:42 -  - TIME SearchModulesEx(request) 0.243 sec
+2017-12-28 17:02:42 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 17:02:42 - GUL02 - [RESERVED_KEY] Лицензионный ключ не активирован
+2017-12-28 17:02:47 -  - exec CUpdateClientPartner::ActivateCoupon
+2017-12-28 17:02:47 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 17:02:48 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.0.9%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.0%2CN%3Bclouds%2C17.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.0%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.0.9%2CN%3Bperfmon%2C17.0.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.0.6%2CN%3Bsocialservices%2C17.1.4%2CN%3Btranslate%2C15.0.0%2CN&SUPD_SRS=RU&SUPD_CMP=N&coupon=S16-NA-0X8790PEQ9HCA2NS&query_type=coupon
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 17:02:48 -  - TIME ActivateCoupon(request) 0.227 sec
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 17:02:48 - AC - [CHECK_IS_BAD] Купон (чек) не действителен. 
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::SearchModulesEx
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 17:02:48 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.0.9%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.0%2CN%3Bclouds%2C17.0.0%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.0%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.0.9%2CN%3Bperfmon%2C17.0.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.0.6%2CN%3Bsocialservices%2C17.1.4%2CN%3Btranslate%2C15.0.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 17:02:48 -  - TIME SearchModulesEx(request) 0.206 sec
+2017-12-28 17:02:48 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 17:02:48 - GUL02 - [RESERVED_KEY] Лицензионный ключ не активирован
+2017-12-28 17:29:25 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-28 17:29:25 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 17:29:25 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 17:29:25 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 17:29:25 -  - TIME GetUpdatesList(request) 0.397 sec
+2017-12-28 17:29:25 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:33 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-28 19:34:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:33 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:34 -  - TIME GetUpdatesList(request) 0.431 sec
+2017-12-28 19:34:34 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:43 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:43 -  - TIME LoadModulesUpdates(request) 0.453 sec
+2017-12-28 19:34:43 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:43 - S - STEP
+2017-12-28 19:34:43 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:44 -  - loadFile
+2017-12-28 19:34:44 - U - RETURN
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:44 -  - TIME UnGzipArchive 0.032 sec
+2017-12-28 19:34:44 -  - TIME UpdateStepModules 0.062 sec
+2017-12-28 19:34:44 - UPD_SUCCESS - Updated: dragon.limitlessyoutube
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:44 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.0%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:44 -  - TIME LoadModulesUpdates(request) 0.434 sec
+2017-12-28 19:34:44 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:44 - S - STEP
+2017-12-28 19:34:44 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:45 -  - loadFile
+2017-12-28 19:34:45 - U - RETURN
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:45 -  - TIME UnGzipArchive 0.02 sec
+2017-12-28 19:34:45 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478885/dragon.limitlessyoutube/updater1.0.1.php'
+2017-12-28 19:34:45 -  - TIME UpdateStepModules 0.025 sec
+2017-12-28 19:34:45 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.1)<br>Добавлено управление плеером: <ul> <li>Автовоспроизведение</li> <li>Аннотации</li> <li>Зацикливание</li> <li>Кнопка полноэкранного режима</li> <li>Панель управления</li> <li>Субтитры</li> </ul>
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:45 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.1%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:45 -  - TIME LoadModulesUpdates(request) 0.476 sec
+2017-12-28 19:34:45 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:45 - S - STEP
+2017-12-28 19:34:45 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:46 -  - loadFile
+2017-12-28 19:34:46 - U - RETURN
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:46 -  - TIME UnGzipArchive 0.027 sec
+2017-12-28 19:34:46 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478886/dragon.limitlessyoutube/updater1.0.2.php'
+2017-12-28 19:34:46 -  - TIME UpdateStepModules 0.041 sec
+2017-12-28 19:34:46 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.2)<br><ul><li>Добавлено возможность вставки собственного превью</li></ul>
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:46 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.2%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:46 -  - TIME LoadModulesUpdates(request) 0.424 sec
+2017-12-28 19:34:46 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:46 - S - STEP
+2017-12-28 19:34:46 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:47 -  - loadFile
+2017-12-28 19:34:47 - U - RETURN
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:47 -  - TIME UnGzipArchive 0.022 sec
+2017-12-28 19:34:47 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478887/dragon.limitlessyoutube/updater1.0.3.php'
+2017-12-28 19:34:47 -  - TIME UpdateStepModules 0.03 sec
+2017-12-28 19:34:47 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.3)<br><b>Исправления:</b> <ul> <li>Теперь есть возможность устанавливать плеер на одной странице много раз, даже если используется одно и тоже видео</li> <li>Полностью переписан скрипт на JavaScript, без использования jQuery</li> <li>Мелкие исправления</li> </ul>
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:47 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.3%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:47 -  - TIME LoadModulesUpdates(request) 0.46 sec
+2017-12-28 19:34:47 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:47 - S - STEP
+2017-12-28 19:34:47 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:48 -  - loadFile
+2017-12-28 19:34:48 - U - RETURN
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:48 -  - TIME UnGzipArchive 0.021 sec
+2017-12-28 19:34:48 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478888/dragon.limitlessyoutube/updater1.0.4.php'
+2017-12-28 19:34:48 -  - TIME UpdateStepModules 0.028 sec
+2017-12-28 19:34:48 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.4)<br><ul> <li>Исправлены недочеты</li> </ul>
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:48 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.4%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:48 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:49 -  - TIME LoadModulesUpdates(request) 0.58 sec
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:49 - S - STEP
+2017-12-28 19:34:49 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:49 -  - loadFile
+2017-12-28 19:34:49 - U - RETURN
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:49 -  - TIME UnGzipArchive 0.027 sec
+2017-12-28 19:34:49 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478889/dragon.limitlessyoutube/updater1.0.5.php'
+2017-12-28 19:34:49 -  - TIME UpdateStepModules 0.039 sec
+2017-12-28 19:34:49 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.5)<br><b>ВНИМАНИЕ:</b> У некоторых может возникнуть проблемы с работой модуля, в таком случае раскомментируйте строчки в файле script.js <ul> <li>Теперь когда на странице будет много видео блоков и вы захотите запустить одно видео, а потом другое - первое видео перейдет в режим СТОП</li> <li>Недочеты, оптимизация</li> </ul>
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:49 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.5%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:49 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:50 -  - TIME LoadModulesUpdates(request) 0.447 sec
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:50 - S - STEP
+2017-12-28 19:34:50 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:50 -  - loadFile
+2017-12-28 19:34:50 - U - RETURN
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:50 -  - TIME UnGzipArchive 0.019 sec
+2017-12-28 19:34:50 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478890/dragon.limitlessyoutube/updater1.0.6.php'
+2017-12-28 19:34:50 -  - TIME UpdateStepModules 0.021 sec
+2017-12-28 19:34:50 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.6)<br>Добавлено определение ссылки (например youtu.be)
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.6%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:51 -  - TIME LoadModulesUpdates(request) 0.461 sec
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:51 - S - STEP
+2017-12-28 19:34:51 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:51 -  - loadFile
+2017-12-28 19:34:51 - U - RETURN
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:51 -  - TIME UnGzipArchive 0.03 sec
+2017-12-28 19:34:51 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478891/dragon.limitlessyoutube/updater1.0.7.php'
+2017-12-28 19:34:51 -  - TIME UpdateStepModules 0.04 sec
+2017-12-28 19:34:51 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.7)<br><ul> <li>Добавлены экраны ожидания загрузки API и во время буферизации первого запуска</li> <li>Добавлено: теперь можно включать или отключать кнопку YouTube на панели инструментов</li> <li>Исправлено: теперь при запуске видео, если на странице запущен другое видео - он переходит в режим СТОП, раньше были проблемы</li> <li>Мелкие исправления</li> </ul>
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:51 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.7%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:51 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:52 -  - TIME LoadModulesUpdates(request) 0.652 sec
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:52 - S - STEP
+2017-12-28 19:34:52 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:52 -  - loadFile
+2017-12-28 19:34:52 - U - RETURN
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:52 -  - TIME UnGzipArchive 0.014 sec
+2017-12-28 19:34:52 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478892/dragon.limitlessyoutube/updater1.0.8.php'
+2017-12-28 19:34:52 -  - TIME UpdateStepModules 0.016 sec
+2017-12-28 19:34:52 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.8)<br><ul> <li>Заменена загрузка скрипта API YouTube на асинхронную загрузку кода</li> <li>Исправлена проблема в которой при неактивной вкладке плеер не загружался</li> <li>Другие мелкие исправления</li> </ul>
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:52 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.8%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:52 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:53 -  - TIME LoadModulesUpdates(request) 0.441 sec
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:53 - S - STEP
+2017-12-28 19:34:53 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:53 -  - loadFile
+2017-12-28 19:34:53 - U - RETURN
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:53 -  - TIME UnGzipArchive 0.014 sec
+2017-12-28 19:34:53 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478893/dragon.limitlessyoutube/updater1.0.9.php'
+2017-12-28 19:34:53 -  - TIME UpdateStepModules 0.016 sec
+2017-12-28 19:34:53 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.9)<br><ul> <li>Теперь работает на Apple устройствах (Safari), проблема была в блоках которые отображались по вверх блока с видео (только в этом браузере убрано превью)</li> <li>Исправлен скрипт погрузки видео плеера после полной загрузки страницы</li> </ul>
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:53 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.9%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:53 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:54 -  - TIME LoadModulesUpdates(request) 0.505 sec
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:54 - S - STEP
+2017-12-28 19:34:54 - LMU01 - LoadModulesUpdates-Step
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:54 -  - loadFile
+2017-12-28 19:34:54 - U - RETURN
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-28 19:34:54 -  - TIME UnGzipArchive 0.013 sec
+2017-12-28 19:34:54 - CSURUS1 - Run updater '/bitrix/updates/update_m1514478894/dragon.limitlessyoutube/updater1.0.10.php'
+2017-12-28 19:34:54 -  - TIME UpdateStepModules 0.014 sec
+2017-12-28 19:34:54 - UPD_SUCCESS - Updated: dragon.limitlessyoutube (1.0.10)<br><ul> <li>Исправлено: не запускался плеер в приложении Facebook на iOS</li> <li>Исправлены мелкие ошибки и недочеты</li> <ul>
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:54 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=dragon.limitlessyoutube&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:54 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:55 -  - TIME LoadModulesUpdates(request) 0.453 sec
+2017-12-28 19:34:55 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:55 - STEP - Finish - NOUPDATES
+2017-12-28 19:34:55 - STEP - Finish - NOUPDATES
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:58 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:58 -  - TIME GetUpdatesList(request) 0.499 sec
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-28 19:34:58 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.1.2%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-28 19:34:58 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-28 19:34:59 -  - TIME GetUpdatesList(request) 0.425 sec
+2017-12-28 19:34:59 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 02:44:21 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 02:44:21 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 02:44:21 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 02:44:21 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 02:44:22 -  - TIME GetUpdatesList(request) 0.398 sec
+2017-12-29 02:44:22 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 02:47:15 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 02:47:15 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 02:47:15 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 02:47:15 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 02:47:15 -  - TIME GetUpdatesList(request) 0.321 sec
+2017-12-29 02:47:15 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:12 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 03:48:12 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:12 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=bitrix.sitecorporate%2Cdragon.limitlessyoutube%2Casd.favorite&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:12 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:13 -  - TIME GetUpdatesList(request) 0.41 sec
+2017-12-29 03:48:13 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:20 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:20 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:21 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:21 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:21 -  - TIME LoadModulesUpdates(request) 0.396 sec
+2017-12-29 03:48:21 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:21 - S - STEP
+2017-12-29 03:48:21 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:21 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:21 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:21 -  - loadFile
+2017-12-29 03:48:21 - U - RETURN
+2017-12-29 03:48:21 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:21 -  - TIME UnGzipArchive 0.239 sec
+2017-12-29 03:48:22 -  - TIME UpdateStepModules 0.489 sec
+2017-12-29 03:48:22 - UPD_SUCCESS - Updated: asd.favorite
+2017-12-29 03:48:22 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:22 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:22 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.0.0%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:22 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:23 -  - TIME LoadModulesUpdates(request) 0.292 sec
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:23 - S - STEP
+2017-12-29 03:48:23 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:23 -  - loadFile
+2017-12-29 03:48:23 - U - RETURN
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:23 -  - TIME UnGzipArchive 0.063 sec
+2017-12-29 03:48:23 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508503/asd.favorite/updater1.1.0.php'
+2017-12-29 03:48:23 -  - TIME UpdateStepModules 0.102 sec
+2017-12-29 03:48:23 - UPD_SUCCESS - Updated: asd.favorite (1.1.0)<br>- Изменения в API - Мелкие изменения в шаблонах
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:23 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.1.0%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:23 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:24 -  - TIME LoadModulesUpdates(request) 0.402 sec
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:24 - S - STEP
+2017-12-29 03:48:24 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:24 -  - loadFile
+2017-12-29 03:48:24 - U - RETURN
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:24 -  - TIME UnGzipArchive 0.11 sec
+2017-12-29 03:48:24 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508504/asd.favorite/updater1.2.0.php'
+2017-12-29 03:48:24 -  - TIME UpdateStepModules 0.161 sec
+2017-12-29 03:48:24 - UPD_SUCCESS - Updated: asd.favorite (1.2.0)<br>- Сущность \"Модуль\" переименована в \"Объект\". - Введен новый объект \"Темы форумов\". - Выделенная папка в списке теперь подсвечивается. - В компоненте элементов избранного повилось две новые настройки: путь до элемента (по умолчанию из инфоблоков), ширина и высота превью-картинки. - В элементах избранного постов блогов теперь выводится и превью поста. - В элементах избранного элементов инфоблоков, если отсутствует текст анонса, теперь выводится часть детального текста. - Доработка механизма добавления в Избранное. - Гостям теперь выдается сообщение о необходимости авторизации для добавления в избранное. - Мелкие улучшения и исправления.
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:24 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.2.0%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:24 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:25 -  - TIME LoadModulesUpdates(request) 0.345 sec
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:25 - S - STEP
+2017-12-29 03:48:25 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:25 -  - loadFile
+2017-12-29 03:48:25 - U - RETURN
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:25 -  - TIME UnGzipArchive 0.019 sec
+2017-12-29 03:48:25 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508505/asd.favorite/updater1.2.1.php'
+2017-12-29 03:48:25 -  - TIME UpdateStepModules 0.026 sec
+2017-12-29 03:48:25 - UPD_SUCCESS - Updated: asd.favorite (1.2.1)<br>- Изменена логика подключения JavaScript-файла в кнопке. - Изменена логика возврата значений без подключения шаблона в компоненте Избранного.
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:25 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.2.1%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:25 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:26 -  - TIME LoadModulesUpdates(request) 0.361 sec
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:26 - S - STEP
+2017-12-29 03:48:26 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:26 -  - loadFile
+2017-12-29 03:48:26 - U - RETURN
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:26 -  - TIME UnGzipArchive 0.018 sec
+2017-12-29 03:48:26 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508506/asd.favorite/updater1.2.2.php'
+2017-12-29 03:48:26 -  - TIME UpdateStepModules 0.022 sec
+2017-12-29 03:48:26 - UPD_SUCCESS - Updated: asd.favorite (1.2.2)<br>- Исправление ошибки кеширования кнопки.
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:26 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.2.2%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:26 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:27 -  - TIME LoadModulesUpdates(request) 0.378 sec
+2017-12-29 03:48:27 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:27 - S - STEP
+2017-12-29 03:48:27 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:27 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:27 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:27 -  - loadFile
+2017-12-29 03:48:27 - U - RETURN
+2017-12-29 03:48:27 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:27 -  - TIME UnGzipArchive 0.209 sec
+2017-12-29 03:48:27 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508507/asd.favorite/updater1.3.0.php'
+2017-12-29 03:48:28 -  - TIME UpdateStepModules 0.371 sec
+2017-12-29 03:48:28 - UPD_SUCCESS - Updated: asd.favorite (1.3.0)<br>- Реализована поддержка размещения кнопки Избранного в списке (детали можно найти здесь http://dev.1c-bitrix.ru/community/webdev/user/11948/blog/public-user-favorites/ ). - Добавлена реакция на системный рейтинг. В настройке типа Избранного можно указать на какие рейтинги реагировать. Подробности здесь: http://dev.1c-bitrix.ru/community/webdev/user/11948/blog/rating-favorites/ - В списке избранных материалов постраничка теперь не запоминается в сессии. - В списке избранных материалов теперь, если у элемента инфоблока нет картинки анонса, берется детальная. - Прочие незначительные изменения и улучшения.
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:28 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.0%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:28 -  - TIME LoadModulesUpdates(request) 0.341 sec
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:28 - S - STEP
+2017-12-29 03:48:28 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:28 -  - loadFile
+2017-12-29 03:48:28 - U - RETURN
+2017-12-29 03:48:28 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:28 -  - TIME UnGzipArchive 0.03 sec
+2017-12-29 03:48:28 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508508/asd.favorite/updater1.3.2.php'
+2017-12-29 03:48:28 -  - TIME UpdateStepModules 0.046 sec
+2017-12-29 03:48:28 - UPD_SUCCESS - Updated: asd.favorite (1.3.2)<br>- Новый шаблон simple, выводящий простые ссылки В избранное / Из избранного. - Мелкие исправления шаблона по умолчанию. 
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:29 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.2%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:29 -  - TIME LoadModulesUpdates(request) 0.389 sec
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:29 - S - STEP
+2017-12-29 03:48:29 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:29 -  - loadFile
+2017-12-29 03:48:29 - U - RETURN
+2017-12-29 03:48:29 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:29 -  - TIME UnGzipArchive 0.033 sec
+2017-12-29 03:48:29 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508509/asd.favorite/updater1.3.3.php'
+2017-12-29 03:48:29 -  - TIME UpdateStepModules 0.043 sec
+2017-12-29 03:48:29 - UPD_SUCCESS - Updated: asd.favorite (1.3.3)<br>- Поддержка младших версий jQuery для кнопки. 
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.3%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:30 -  - TIME LoadModulesUpdates(request) 0.303 sec
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:30 - S - STEP
+2017-12-29 03:48:30 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:30 -  - loadFile
+2017-12-29 03:48:30 - U - RETURN
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:30 -  - TIME UnGzipArchive 0.01 sec
+2017-12-29 03:48:30 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508510/asd.favorite/updater1.3.4.php'
+2017-12-29 03:48:30 -  - TIME UpdateStepModules 0.024 sec
+2017-12-29 03:48:30 - UPD_SUCCESS - Updated: asd.favorite (1.3.4)<br>- При установленном модуле Веб-аналитики лайки и анлайки теперь добавляются в события.
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.4%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:31 -  - TIME LoadModulesUpdates(request) 0.355 sec
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:31 - S - STEP
+2017-12-29 03:48:31 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:31 -  - loadFile
+2017-12-29 03:48:31 - U - RETURN
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:31 -  - TIME UnGzipArchive 0.012 sec
+2017-12-29 03:48:31 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508511/asd.favorite/updater1.3.5.php'
+2017-12-29 03:48:31 -  - TIME UpdateStepModules 0.013 sec
+2017-12-29 03:48:31 - UPD_SUCCESS - Updated: asd.favorite (1.3.5)<br>- Незначительные изменения.
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:31 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.5%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:32 -  - TIME LoadModulesUpdates(request) 0.366 sec
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:32 - S - STEP
+2017-12-29 03:48:32 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:32 -  - loadFile
+2017-12-29 03:48:32 - U - RETURN
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:32 -  - TIME UnGzipArchive 0.015 sec
+2017-12-29 03:48:32 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508512/asd.favorite/updater1.3.6.php'
+2017-12-29 03:48:32 -  - TIME UpdateStepModules 0.019 sec
+2017-12-29 03:48:32 - UPD_SUCCESS - Updated: asd.favorite (1.3.6)<br>- Исправлена ошибка, при которой не получался ответ от сервера в списке элементов.
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:32 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.6%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:32 -  - TIME LoadModulesUpdates(request) 0.327 sec
+2017-12-29 03:48:32 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:32 - S - STEP
+2017-12-29 03:48:32 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:33 -  - loadFile
+2017-12-29 03:48:33 - U - RETURN
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:33 -  - TIME UnGzipArchive 0.011 sec
+2017-12-29 03:48:33 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508513/asd.favorite/updater1.3.7.php'
+2017-12-29 03:48:33 -  - TIME UpdateStepModules 0.013 sec
+2017-12-29 03:48:33 - UPD_SUCCESS - Updated: asd.favorite (1.3.7)<br>- Изменение отображения меню для Битрикс 12.
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:33 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.7%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:33 -  - TIME LoadModulesUpdates(request) 0.31 sec
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:33 - S - STEP
+2017-12-29 03:48:33 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:33 -  - loadFile
+2017-12-29 03:48:33 - U - RETURN
+2017-12-29 03:48:33 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:33 -  - TIME UnGzipArchive 0.03 sec
+2017-12-29 03:48:34 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508513/asd.favorite/updater1.3.8.php'
+2017-12-29 03:48:34 -  - TIME UpdateStepModules 0.041 sec
+2017-12-29 03:48:34 - UPD_SUCCESS - Updated: asd.favorite (1.3.8)<br>- Исправления для последних изменений в системе кеширования.
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:34 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.8%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:34 -  - TIME LoadModulesUpdates(request) 0.382 sec
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:34 - S - STEP
+2017-12-29 03:48:34 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:34 -  - loadFile
+2017-12-29 03:48:34 - U - RETURN
+2017-12-29 03:48:34 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:34 -  - TIME UnGzipArchive 0.01 sec
+2017-12-29 03:48:34 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508514/asd.favorite/updater1.3.81.php'
+2017-12-29 03:48:34 -  - TIME UpdateStepModules 0.013 sec
+2017-12-29 03:48:34 - UPD_SUCCESS - Updated: asd.favorite (1.3.81)<br>- Исправление инсталятора.
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:35 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.81%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:35 -  - TIME LoadModulesUpdates(request) 0.314 sec
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:35 - S - STEP
+2017-12-29 03:48:35 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:35 -  - loadFile
+2017-12-29 03:48:35 - U - RETURN
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:35 -  - TIME UnGzipArchive 0.015 sec
+2017-12-29 03:48:35 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508515/asd.favorite/updater1.3.82.php'
+2017-12-29 03:48:35 -  - TIME UpdateStepModules 0.015 sec
+2017-12-29 03:48:35 - UPD_SUCCESS - Updated: asd.favorite (1.3.82)<br>- Опечатка.
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:35 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.82%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:35 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:36 -  - TIME LoadModulesUpdates(request) 0.355 sec
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:36 - S - STEP
+2017-12-29 03:48:36 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:36 -  - loadFile
+2017-12-29 03:48:36 - U - RETURN
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:36 -  - TIME UnGzipArchive 0.021 sec
+2017-12-29 03:48:36 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508516/asd.favorite/updater1.3.84.php'
+2017-12-29 03:48:36 -  - TIME UpdateStepModules 0.012 sec
+2017-12-29 03:48:36 - UPD_SUCCESS - Updated: asd.favorite (1.3.84)<br>- Удаление выбора прав доступа к модулю.
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:36 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.84%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:36 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:37 -  - TIME LoadModulesUpdates(request) 0.344 sec
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:37 - S - STEP
+2017-12-29 03:48:37 - LMU01 - LoadModulesUpdates-Step
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:37 -  - loadFile
+2017-12-29 03:48:37 - U - RETURN
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::UnGzipArchive
+2017-12-29 03:48:37 -  - TIME UnGzipArchive 0.019 sec
+2017-12-29 03:48:37 - CSURUS1 - Run updater '/bitrix/updates/update_m1514508517/asd.favorite/updater1.3.86.php'
+2017-12-29 03:48:37 -  - TIME UpdateStepModules 0.024 sec
+2017-12-29 03:48:37 - UPD_SUCCESS - Updated: asd.favorite (1.3.86)<br>- Исправление ключей языковых файлов.
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:37 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:37 -  - TIME LoadModulesUpdates(request) 0.336 sec
+2017-12-29 03:48:37 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:37 - STEP - Finish - NOUPDATES
+2017-12-29 03:48:37 - STEP - Finish - NOUPDATES
+2017-12-29 03:48:40 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 03:48:40 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:40 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:40 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:40 -  - TIME GetUpdatesList(request) 0.337 sec
+2017-12-29 03:48:40 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:48:43 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 03:48:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:48:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:48:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:48:44 -  - TIME GetUpdatesList(request) 0.315 sec
+2017-12-29 03:48:44 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:50:46 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 03:50:46 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:50:46 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:50:46 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:50:46 -  - TIME GetUpdatesList(request) 0.304 sec
+2017-12-29 03:50:46 -  - exec CUpdateClientPartner::ParseServerData
+2017-12-29 03:50:49 -  - exec CUpdateClientPartner::GetUpdatesList
+2017-12-29 03:50:49 -  - exec CUpdateClientPartner::__CollectRequestData
+2017-12-29 03:50:49 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2017-12-29 03:50:49 -  - exec CUpdateClientPartner::GetHTTPPage
+2017-12-29 03:50:49 -  - TIME GetUpdatesList(request) 0.354 sec
+2017-12-29 03:50:49 -  - exec CUpdateClientPartner::ParseServerData
+2018-01-23 21:15:21 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-01-23 21:15:21 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-01-23 21:15:21 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=lifehack.local&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.1.0&NGINX=Y&dbv=5.5.53&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-01-23 21:15:21 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-01-23 21:15:21 -  - TIME GetUpdatesList(request) 0.515 sec
+2018-01-23 21:15:21 -  - exec CUpdateClientPartner::ParseServerData
+2018-01-29 21:30:38 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-01-29 21:30:38 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-01-29 21:30:38 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube&SUPD_SRS=RU&SUPD_CMP=N
+2018-01-29 21:30:38 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-01-29 21:30:38 -  - TIME GetUpdatesList(request) 0.357 sec
+2018-01-29 21:30:38 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:30 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-02-05 01:20:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:30 -  - TIME GetUpdatesList(request) 0.354 sec
+2018-02-05 01:20:30 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:38 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:38 -  - TIME LoadModulesUpdates(request) 0.255 sec
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:38 - S - STEP
+2018-02-05 01:20:38 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:38 -  - loadFile
+2018-02-05 01:20:38 - U - RETURN
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:38 -  - TIME UnGzipArchive 0.004 sec
+2018-02-05 01:20:38 -  - TIME UpdateStepModules 0.014 sec
+2018-02-05 01:20:38 - UPD_SUCCESS - Updated: cackle.comments
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:38 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.0.2%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:38 -  - TIME LoadModulesUpdates(request) 0.257 sec
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:38 - S - STEP
+2018-02-05 01:20:38 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:38 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:38 -  - loadFile
+2018-02-05 01:20:39 - U - RETURN
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:39 -  - TIME UnGzipArchive 0.006 sec
+2018-02-05 01:20:39 - CSURUS1 - Run updater '/bitrix/updates/update_m1517782839/cackle.comments/updater1.0.5.php'
+2018-02-05 01:20:39 -  - TIME UpdateStepModules 0.057 sec
+2018-02-05 01:20:39 - UPD_SUCCESS - Updated: cackle.comments (1.0.5)<br>Исправление при комментирование пользователем через Единую авторизацию(SSO).
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:39 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.0.5%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:39 -  - TIME LoadModulesUpdates(request) 0.26 sec
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:39 - S - STEP
+2018-02-05 01:20:39 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:39 -  - loadFile
+2018-02-05 01:20:39 - U - RETURN
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:39 -  - TIME UnGzipArchive 0.01 sec
+2018-02-05 01:20:39 - CSURUS1 - Run updater '/bitrix/updates/update_m1517782839/cackle.comments/updater1.1.1.php'
+2018-02-05 01:20:39 -  - TIME UpdateStepModules 0.021 sec
+2018-02-05 01:20:39 - UPD_SUCCESS - Updated: cackle.comments (1.1.1)<br>Изменение кода инициализации виджета комментарив.
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:39 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.1%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:39 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:40 -  - TIME LoadModulesUpdates(request) 0.276 sec
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:40 - S - STEP
+2018-02-05 01:20:40 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:40 -  - loadFile
+2018-02-05 01:20:40 - U - RETURN
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:40 -  - TIME UnGzipArchive 0.004 sec
+2018-02-05 01:20:40 -  - TIME UpdateStepModules 0.02 sec
+2018-02-05 01:20:40 - UPD_SUCCESS - Updated: cackle.comments (1.1.2)<br>Изменение api для синхронизации комментариев.
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:40 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.2%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:40 -  - TIME LoadModulesUpdates(request) 0.274 sec
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:40 - S - STEP
+2018-02-05 01:20:40 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:40 -  - loadFile
+2018-02-05 01:20:40 - U - RETURN
+2018-02-05 01:20:40 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:41 -  - TIME UnGzipArchive 0.007 sec
+2018-02-05 01:20:41 -  - TIME UpdateStepModules 0.02 sec
+2018-02-05 01:20:41 - UPD_SUCCESS - Updated: cackle.comments (1.1.3)<br>1.1.3 Изменение алгоритма синхронизации.
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:41 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.3%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:41 -  - TIME LoadModulesUpdates(request) 0.262 sec
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:41 - S - STEP
+2018-02-05 01:20:41 - LMU01 - LoadModulesUpdates-Step
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:41 -  - loadFile
+2018-02-05 01:20:41 - U - RETURN
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-02-05 01:20:41 -  - TIME UnGzipArchive 0.004 sec
+2018-02-05 01:20:41 - CSURUS1 - Run updater '/bitrix/updates/update_m1517782841/cackle.comments/updater1.1.4.php'
+2018-02-05 01:20:41 -  - TIME UpdateStepModules 0.02 sec
+2018-02-05 01:20:41 - UPD_SUCCESS - Updated: cackle.comments (1.1.4)<br>1.1.4 Исправение SSO на Windows 1251.
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:41 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=cackle.comments&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:41 -  - TIME LoadModulesUpdates(request) 0.265 sec
+2018-02-05 01:20:41 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:41 - STEP - Finish - NOUPDATES
+2018-02-05 01:20:41 - STEP - Finish - NOUPDATES
+2018-02-05 01:20:43 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-02-05 01:20:43 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:43 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:43 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:43 -  - TIME GetUpdatesList(request) 0.272 sec
+2018-02-05 01:20:43 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:20:44 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-02-05 01:20:44 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:20:44 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:20:44 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:20:44 -  - TIME GetUpdatesList(request) 0.272 sec
+2018-02-05 01:20:44 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:21:57 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-02-05 01:21:57 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:21:57 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:21:57 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:21:57 -  - TIME GetUpdatesList(request) 0.289 sec
+2018-02-05 01:21:57 -  - exec CUpdateClientPartner::ParseServerData
+2018-02-05 01:22:54 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-02-05 01:22:54 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-02-05 01:22:54 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-02-05 01:22:54 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-02-05 01:22:54 -  - TIME GetUpdatesList(request) 0.273 sec
+2018-02-05 01:22:54 -  - exec CUpdateClientPartner::ParseServerData
