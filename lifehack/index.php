@@ -1,13 +1,41 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Главная");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"main", 
-	array(
+
+$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", "main", Array(
+	"CACHE_TIME" => "3600",	// Время кеширования (сек.)
+		"CACHE_TYPE" => "A",	// Тип кеширования
+		"CHECK_DATES" => "N",	// Искать только в активных по дате документах
+		"COLOR_NEW" => "3E74E6",	// Цвет более позднего тега (пример: "C0C0C0")
+		"COLOR_OLD" => "C0C0C0",	// Цвет более раннего тега (пример: "FEFEFE")
+		"COLOR_TYPE" => "Y",	// Плавное изменение цвета
+		"FILTER_NAME" => "",	// Дополнительный фильтр
+		"FONT_MAX" => "50",	// Максимальный размер шрифта (px)
+		"FONT_MIN" => "10",	// Минимальный  размер шрифта (px)
+		"PAGE_ELEMENTS" => "13",	// Количество тегов
+		"PERIOD" => "",	// Период выборки тегов (дней)
+		"PERIOD_NEW_TAGS" => "",	// Период,  в течение которого считать тег новым (дней)
+		"SHOW_CHAIN" => "Y",	// Показывать цепочку навигации
+		"SORT" => "CNT",	// Сортировка тегов
+		"TAGS_INHERIT" => "Y",	// Сужать область поиска
+		"URL_SEARCH" => "/search/index.php",	// Путь к странице поиска (от корня сайта)
+		"WIDTH" => "100%",	// Ширина облака тегов (пример: "100%" или "100px", "100pt", "100in")
+		"arrFILTER" => array(	// Ограничение области поиска
+			0 => "iblock_blog",
+		),
+		"arrFILTER_iblock_blog" => array(	// Искать в информационных блоках типа "iblock_blog"
+			0 => "1",
+		)
+	),
+	false
+);?>
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"main",
+	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "N",
-		"AJAX_MODE" => "Y",
+		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
 		"AJAX_OPTION_JUMP" => "Y",
@@ -18,28 +46,21 @@ $APPLICATION->SetTitle("Главная");
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
+		"DISPLAY_AS_RATING" => "rating",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(
-			0 => "NAME",
-			1 => "TAGS",
-			2 => "PREVIEW_TEXT",
-			3 => "PREVIEW_PICTURE",
-			4 => "DATE_ACTIVE_FROM",
-			5 => "SHOW_COUNTER",
-			6 => "CREATED_USER_NAME",
-			7 => "",
-		),
+		"FIELD_CODE" => array("NAME","TAGS","PREVIEW_TEXT","PREVIEW_PICTURE","DATE_ACTIVE_FROM","SHOW_COUNTER","CREATED_USER_NAME",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "1",
 		"IBLOCK_TYPE" => "blog",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
+		"MAX_VOTE" => "5",
 		"MEDIA_PROPERTY" => "",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
@@ -53,13 +74,7 @@ $APPLICATION->SetTitle("Главная");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "350",
-		"PROPERTY_CODE" => array(
-			0 => "video",
-			1 => "video_youtube",
-			2 => "rating",
-			3 => "LINK_YOUTUBE",
-			4 => "",
-		),
+		"PROPERTY_CODE" => array("video","video_youtube","rating","LINK_YOUTUBE",""),
 		"SEARCH_PAGE" => "/search/",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "Y",
@@ -77,7 +92,7 @@ $APPLICATION->SetTitle("Главная");
 		"TEMPLATE_THEME" => "green",
 		"USE_RATING" => "Y",
 		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => "main"
-	),
-	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+		"VOTE_NAMES" => array("1","2","3","4","5","")
+	)
+);?><br>
+ <br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

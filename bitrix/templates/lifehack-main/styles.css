@@ -118,8 +118,8 @@ footer .container {
     height:auto !important;
     height:100%;
     min-height:100%;
-    background:url(/bitrix/templates/lifehack-main/images/tail-middle.jpg) repeat-y center 194px;
-    min-width:940px;
+    /*background:url(http://www.designbolts.com/wp-content/uploads/2012/12/White-Paper-Seamless-Pattern-For-Website-Background.jpg) repeat 194px;*/
+    /*min-width:940px;*/
 }
 
 

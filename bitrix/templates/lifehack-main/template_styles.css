@@ -1,10 +1,21 @@
+body {
+    background: url("/bitrix/templates/lifehack-main/images/hexagon-portrait-letter-1.png") repeat;
+}
+
 /* Заголовок сайта */
 .top-menu {
     height:65px;
 }
 .logo {
-    max-width: 150px;
+    max-width: 195px;
     margin: auto;
+}
+
+.auth-line {
+    margin: 0 auto;
+    text-align: right;
+    height: 45px;
+    overflow: hidden;
 }
 
 .auth-form__line {
@@ -13,6 +24,7 @@
     line-height: 20px;
     padding: 2px;
 }
+
 
 .bx-system-auth-form .form-group{
     margin-bottom: 5px;
@@ -185,6 +197,25 @@ h2 {
     right: 20px;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
+header .container {
+    padding: 10px;
+}
+
+.container {
+    /* background: url(https://inspirationhut.net/wp-content/uploads/2014/09/rice-paper.jpg) repeat 194px; */
+    border: #e9e9e9 5px solid;
+    background: #f4f4f4;
+    /* border-left: #e9e9e9 1px solid; */
+    box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+}
+.wrap {
+    background:url(/bitrix/templates/lifehack-main/images/fon.jpg) repeat;
+}
+
 .bg-container,
 .bx-auth,
 .bform {
@@ -332,12 +363,12 @@ li.bx_hma_one_lvl.current>a {
 }
 
 .asd_lik_button {
-    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/like.png) top left no-repeat;
+    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/like_hand.png) top left no-repeat;
     background-size: contain;
 }
 
 .asd_liked {
-    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/unlike.png?v2) top left no-repeat;
+    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/unlike_hand.png) top left no-repeat;
     background-size: contain;
 }
 
@@ -396,4 +427,58 @@ li.bx_hma_one_lvl.current>a {
 
 footer {
     margin-top: 10px;
+}
+
+
+
+/* CUSTOM */
+h1, h2, h3, h4,
+.blog-post-title,
+.blog-post-title a{
+    font-family: 'Kurale';
+    color: #33b111;
+}
+
+.bx-newsdetail-content,
+.bx-newslist-content{
+    font-family: 'Kurale';
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .blog-post .bx-newslist-img img {
+        height: 200px;
+    }
+
+    .bx-newslist-block .bx-newslist-content {
+        height: 55px;
+    }
+    .bx-newslist-container {
+        height: 400px;
+    }
+
+    .bx-newslist-block .bx-newslist-content {
+        overflow: hidden;
+        z-index: 200;
+    }
+
+    .bx-newslist-block .bx-newslist-content:hover ,
+    .bx-newslist-block .bx-newslist-content:focus {
+        min-height: 55px;
+        height: 100%;
+    }
+
+    .blog-post-title, .blog-post-title a {
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        color: #33b111;
+    }
+
+    .blog-post-title {
+        padding-bottom: 0px;
+    }
+
 }

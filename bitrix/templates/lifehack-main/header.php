@@ -33,6 +33,7 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="<?=$APPLICATION->GetTemplatePath('js/html5.js');?>"></script>
     <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
 </head>
 <body>
 <div id="top-panel"><?= $APPLICATION->ShowPanel(); ?></div>
@@ -97,29 +98,10 @@
     <!-- header -->
     <header>
         <div class="container">
-            <div class="clear top-menu">
-                <? $APPLICATION->IncludeComponent(
-                    "bitrix:menu",
-                    "top_menu",
-                    array(
-                        "COMPONENT_TEMPLATE" => "top_menu",
-                        "ROOT_MENU_TYPE" => "top",
-                        "MENU_CACHE_TYPE" => "N",
-                        "MENU_CACHE_TIME" => "3600",
-                        "MENU_CACHE_USE_GROUPS" => "Y",
-                        "MENU_CACHE_GET_VARS" => array(),
-                        "MAX_LEVEL" => "1",
-                        "CHILD_MENU_TYPE" => "left",
-                        "USE_EXT" => "N",
-                        "DELAY" => "N",
-                        "ALLOW_MULTI_SELECT" => "N"
-                    ),
-                    false
-                ); ?>
-            </div>
+
             <div class="">
                 <div class="col-xs-3 hidden-xs hidden-sm">
-                    <a href="/"><img src="<?= $APPLICATION->GetTemplatePath('images/logo_hand.png') ?>"
+                    <a href="/"><img src="<?= $APPLICATION->GetTemplatePath('images/lh_logo.png') ?>"
                                      class=" img-responsive logo"/></a>
                 </div>
                 <div class="col-md-6 hidden-xs hidden-sm">
@@ -166,7 +148,7 @@
     <div class="container">
         <div class="row">
         <!-- aside -->
-        <aside class="col-xs-3 hidden-xs hidden-sm" style="margin-top: 13px;">
+        <aside class="col-xs-3 hidden-xs hidden-sm" style="margin-top: 10px;">
             <? $APPLICATION->IncludeComponent("bitrix:menu", "menu_left", Array(
                 "COMPONENT_TEMPLATE" => "catalog_vertical",
                 "ROOT_MENU_TYPE" => "left",    // Тип меню для первого уровня
