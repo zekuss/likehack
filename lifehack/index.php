@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Главная");
+$APPLICATION->SetPageProperty("title", "ЛайкХак");
+$APPLICATION->SetTitle("ЛайкХак");
 
 $APPLICATION->IncludeComponent("bitrix:search.tags.cloud", "main", Array(
 	"CACHE_TIME" => "3600",	// Время кеширования (сек.)

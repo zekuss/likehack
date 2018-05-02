@@ -2,6 +2,7 @@
 <html lang="<?= $APPLICATION->GetLang()['LANGUAGE_ID'] ?>">
 
 <head>
+    <title><?$APPLICATION->ShowTitle()?></title>
     <?
     $APPLICATION->SetTitle($APPLICATION->GetTitle(true));
 

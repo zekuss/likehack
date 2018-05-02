@@ -17,6 +17,11 @@ $this->addExternalCss($this->GetFolder() . '/themes/' . $arParams['TEMPLATE_THEM
 CUtil::InitJSCore(array('fx'));
 ?>
 
+<? $APPLICATION->SetPageProperty("description",$arResult["PREVIEW_TEXT"]);?>
+<? $APPLICATION->SetPageProperty("keywords","лайфхак, лайкхак, хитрости жизни, быстро, просто, за 5 минут, " . strip_tags( $arResult["FIELDS"]['TAGS']));?>
+
+
+
 <?
 if(CModule::IncludeModule('asd.favorite')) {
     foreach($arResult["ITEMS"] as $cell=>$arElement){
