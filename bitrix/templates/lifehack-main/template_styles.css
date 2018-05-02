@@ -13,7 +13,7 @@ body {
 
 .auth-line {
     margin: 0 auto;
-    text-align: right;
+    text-align: center;
     height: 45px;
     overflow: hidden;
 }
