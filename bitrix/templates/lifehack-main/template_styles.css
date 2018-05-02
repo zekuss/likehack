@@ -442,14 +442,20 @@ h1, h2, h3, h4,
 .bx-newsdetail-content,
 .bx-newslist-content{
     font-family: 'Kurale';
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 
 @media only screen and (min-width: 1024px) {
     .blog-post .bx-newslist-img img {
         height: 200px;
+    }
+
+    .bx-newsdetail-content,
+    .bx-newslist-content{
+        font-size: 18px;
+        line-height: 20px;
     }
 
     .bx-newslist-block .bx-newslist-content {

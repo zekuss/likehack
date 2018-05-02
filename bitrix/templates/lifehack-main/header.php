@@ -100,7 +100,7 @@
         <div class="container">
 
             <div class="">
-                <div class="col-xs-3 hidden-xs hidden-sm">
+                <div class="col-md-3 col-xs-6">
                     <a href="/"><img src="<?= $APPLICATION->GetTemplatePath('images/lh_logo.png') ?>"
                                      class=" img-responsive logo"/></a>
                 </div>
@@ -127,7 +127,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3 col-xs-12 bg-container">
+                <div class="col-md-3 col-xs-6 bg-container">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:system.auth.form",
                         "main",

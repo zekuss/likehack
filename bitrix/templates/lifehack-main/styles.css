@@ -40,12 +40,12 @@ body {
 
 
 /* Global Structure ============================================================= */
-.container {
-    margin:0 auto;
-    width:940px;
-    overflow:hidden;
-    font-size:.875em;
-}
+/*.container {*/
+    /*margin:0 auto;*/
+    /*width:940px;*/
+    /*overflow:hidden;*/
+    /*font-size:.875em;*/
+/*}*/
 
 /* Header */
 header {
