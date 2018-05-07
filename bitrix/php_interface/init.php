@@ -6,10 +6,21 @@
  * Time: 19:31
  */
 
+AddEventHandler("iblock", "OnBeforeIBlockElementAdd", Array("Handlers", "OnBeforeIBlockElementAddHandler"));
+
 AddEventHandler("iblock", "OnAfterIBlockElementAdd", Array("Handlers", "OnAfterIBlockElementAddHandler"));
 
 class Handlers
 {
+    // создаем обработчик события "OnBeforeIBlockElementAdd"
+    function OnBeforeIBlockElementAddHandler(&$arFields)
+    {
+        if ($arFields['IBLOCK_ID'] == 1) {
+
+            $arFields['NAME'] = mb_strtoupper($arFields['NAME']);
+        }
+    }
+
     // создаем обработчик события "OnAfterIBlockElementAdd"
     function OnAfterIBlockElementAddHandler(&$arFields)
     {
