@@ -724,3 +724,84 @@
 2018-02-05 01:22:54 -  - exec CUpdateClientPartner::GetHTTPPage
 2018-02-05 01:22:54 -  - TIME GetUpdatesList(request) 0.273 sec
 2018-02-05 01:22:54 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:58:55 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-05-02 17:58:55 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:58:55 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments%2Cvettich.sp&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:58:55 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:58:56 -  - TIME GetUpdatesList(request) 0.278 sec
+2018-05-02 17:58:56 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:59:02 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN&reqm=vettich.sp&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:59:02 -  - TIME LoadModulesUpdates(request) 0.317 sec
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:02 - S - STEP
+2018-05-02 17:59:02 - LMU01 - LoadModulesUpdates-Step
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:02 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:02 -  - loadFile
+2018-05-02 17:59:03 - U - RETURN
+2018-05-02 17:59:03 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-05-02 17:59:04 -  - TIME UnGzipArchive 0.163 sec
+2018-05-02 17:59:04 -  - TIME UpdateStepModules 0.29 sec
+2018-05-02 17:59:04 - UPD_SUCCESS - Updated: vettich.sp
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:59:04 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.4%2CN&reqm=vettich.sp&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:59:04 -  - TIME LoadModulesUpdates(request) 0.281 sec
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:04 - S - STEP
+2018-05-02 17:59:04 - LMU01 - LoadModulesUpdates-Step
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:04 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:04 -  - loadFile
+2018-05-02 17:59:05 - U - RETURN
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-05-02 17:59:05 -  - TIME UnGzipArchive 0.005 sec
+2018-05-02 17:59:05 -  - TIME UpdateStepModules 0.024 sec
+2018-05-02 17:59:05 - UPD_SUCCESS - Updated: vettich.sp (2.0.5)<br><ul> <li>Обновлена инструкция по получению токена в Facebook</li> <li>Поправлена ошибка в кроне</li> </ul>
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:59:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.5%2CN&reqm=vettich.sp&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:59:05 -  - TIME LoadModulesUpdates(request) 0.284 sec
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:05 - S - STEP
+2018-05-02 17:59:05 - LMU01 - LoadModulesUpdates-Step
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:05 -  - loadFile
+2018-05-02 17:59:05 - U - RETURN
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::UnGzipArchive
+2018-05-02 17:59:05 -  - TIME UnGzipArchive 0.003 sec
+2018-05-02 17:59:05 - CSURUS1 - Run updater '/bitrix/updates/update_m1525273145/vettich.sp/updater2.0.6.php'
+2018-05-02 17:59:05 -  - TIME UpdateStepModules 0.02 sec
+2018-05-02 17:59:05 - UPD_SUCCESS - Updated: vettich.sp (2.0.6)<br><ul> <li>Добавлена поддержка публикации от имени группы в вк</li> <li>Обновлена инструкция для facebook</li> <li>Убраны некоторые варнинги из консоли</li> </ul>
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::LoadModulesUpdates
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:59:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.6%2CN&reqm=vettich.sp&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:59:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:59:06 -  - TIME LoadModulesUpdates(request) 0.286 sec
+2018-05-02 17:59:06 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 17:59:06 - STEP - Finish - NOUPDATES
+2018-05-02 17:59:06 - STEP - Finish - NOUPDATES
+2018-05-02 17:59:07 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-05-02 17:59:07 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 17:59:07 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.6%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments%2Cvettich.sp&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 17:59:07 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 17:59:07 -  - TIME GetUpdatesList(request) 0.303 sec
+2018-05-02 17:59:07 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 20:53:46 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-05-02 20:53:46 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 20:53:46 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.6%2CN%3Bvettich.devform%2C1.1.3%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments%2Cvettich.sp%2Cvettich.devform&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 20:53:46 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 20:53:47 -  - TIME GetUpdatesList(request) 0.349 sec
+2018-05-02 20:53:47 -  - exec CUpdateClientPartner::ParseServerData
+2018-05-02 20:53:53 -  - exec CUpdateClientPartner::GetUpdatesList
+2018-05-02 20:53:53 -  - exec CUpdateClientPartner::__CollectRequestData
+2018-05-02 20:53:53 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=likehack.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=2&TYPENC=F&CLIENT_PHPVER=7.0.24&NGINX=Y&dbv=5.6.25&instm=main%2C17.5.7%2CN%3Basd.favorite%2C1.3.86%2CN%3Bb24connector%2C17.0.1%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bbitrixcloud%2C17.0.1%2CN%3Bclouds%2C17.0.2%2CN%3Bcompression%2C16.0.0%2CN%3Bdragon.limitlessyoutube%2C1.0.10%2CN%3Bfileman%2C17.5.8%2CN%3Bhighloadblock%2C17.0.2%2CN%3Biblock%2C17.5.3%2CN%3Bperfmon%2C17.0.1%2CN%3Bscale%2C17.5.0%2CN%3Bsearch%2C17.0.1%2CN%3Bseo%2C17.5.0%2CN%3Bsocialservices%2C17.5.1%2CN%3Btranslate%2C16.0.0%2CN%3Bui%2C17.5.2%2CN%3Bcackle.comments%2C1.1.4%2CN%3Bvettich.sp%2C2.0.6%2CN%3Bvettich.devform%2C1.1.3%2CN&reqm=asd.favorite%2Cbitrix.sitecorporate%2Cdragon.limitlessyoutube%2Ccackle.comments%2Cvettich.sp%2Cvettich.devform&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2018-05-02 20:53:53 -  - exec CUpdateClientPartner::GetHTTPPage
+2018-05-02 20:53:53 -  - TIME GetUpdatesList(request) 0.276 sec
+2018-05-02 20:53:53 -  - exec CUpdateClientPartner::ParseServerData

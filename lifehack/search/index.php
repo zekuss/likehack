@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Поиск по сайту");
+$APPLICATION->SetPageProperty("ROBOTS", "NOINDEX,NOFOLLOW");
 ?><? $APPLICATION->IncludeComponent("bitrix:search.page", "search.page_main", Array(
     "AJAX_MODE" => "N",    // Включить режим AJAX
     "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор

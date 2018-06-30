@@ -281,6 +281,7 @@ $arJSCoreConfig = array(
 		),
 		'css' => '/bitrix/js/main/sidepanel/css/sidepanel.css',
 		'rel' => array('ajax', 'fx'),
+		'lang' => $pathLang.'/js/sidepanel.php',
 		'bundle_js' => 'sidepanel',
 		'bundle_css' => 'sidepanel'
 	),
@@ -355,6 +356,7 @@ $arJSCoreConfig = array(
 	'helper' => array(
 		'js' => '/bitrix/js/main/helper/helper.js',
 		'css' => '/bitrix/js/main/helper/css/helper.css',
+		'rel' => array('sidepanel', 'ajax')
 	),
 	'webrtc_adapter' => array(
 		'js' => '/bitrix/js/main/webrtc/adapter.js'
@@ -395,6 +397,10 @@ $arJSCoreConfig = array(
 			);
 		},
 		'rel' => array('popup'),
+	),
+	'loader' => array(
+		'js' => '/bitrix/js/main/loader/loader.js',
+		'css' => '/bitrix/js/main/loader/loader.css'
 	)
 );
 

@@ -11,6 +11,7 @@ BX.Fileman.PlayerManager = {
 	isStarted: false,
 	players: [],
 	playing: false,
+	slider: null,
 	addPlayer: function(player)
 	{
 		this.players.push(player);
@@ -31,10 +32,30 @@ BX.Fileman.PlayerManager = {
 
 		this.isStarted = true;
 
-		BX.ready(function () {
+		BX.ready(BX.proxy(function () {
 			BX.bind(window, 'scroll', BX.throttle(BX.Fileman.PlayerManager.onScroll, 300, BX.Fileman.PlayerManager));
 			setTimeout(BX.delegate(BX.Fileman.PlayerManager.onScroll, BX.Fileman.PlayerManager), 50);
-		});
+			if(window !== window.top)
+			{
+				if(BX.getClass('top.BX.SidePanel.Instance'))
+				{
+					var currentSlider = top.BX.SidePanel.Instance.getSliderByWindow(window);
+					if(currentSlider)
+					{
+						this.slider = currentSlider;
+						BX.addCustomEvent("SidePanel.Slider:onCloseComplete", BX.proxy(function(event) {
+							if(event.getSlider() === this.slider)
+							{
+								for(var i in this.players)
+									{
+										this.players[i].pause();
+									}
+								}
+							}, this));
+						}
+					}
+				}
+		}, this));
 	},
 	bindPlayerEvents: function(player)
 	{
@@ -300,13 +321,20 @@ BX.Fileman.Player.prototype.play = function()
 BX.Fileman.Player.prototype.setPlayedState = function()
 {
 	var storageHash = this.__getStorageHash();
-	BX.localStorage.set(storageHash, 'played', 1209600);
+	if(BX.localStorage)
+	{
+		BX.localStorage.set(storageHash, 'played', 1209600);
+	}
 };
 
 BX.Fileman.Player.prototype.isPlayed = function()
 {
 	var storageHash = this.__getStorageHash();
-	return (BX.localStorage.get(storageHash) === 'played');
+	if(BX.localStorage)
+	{
+		return (BX.localStorage.get(storageHash) === 'played');
+	}
+	return true;
 };
 
 BX.Fileman.Player.prototype.__getStorageHash = function()
@@ -465,6 +493,16 @@ BX.Fileman.Player.prototype.init = function()
 	this.vjsPlayer.on('error', BX.proxy(function()
 	{
 		this.fireEvent('onError');
+		if(!this.isFlashErrrorShown && this.hasFlash)
+		{
+			this.isFlashErrrorShown = true;
+			var error = this.vjsPlayer.error();
+			if(error && error.code === 4)
+			{
+				error.message = error.message + '. ' + BX.message('PLAYER_FLASH_CHECK');
+				this.vjsPlayer.errorDisplay.content(error.message);
+			}
+		}
 	}, this));
 	if(this.hasFlash)
 	{
@@ -475,7 +513,7 @@ BX.Fileman.Player.prototype.init = function()
 				this.vjsPlayer.error(BX.message('PLAYER_FLASH_REQUIRED'));
 				this.inited = true;
 			}
-		}, this), 2000);
+		}, this), 3000);
 	}
 	this.vjsPlayer.ready(BX.proxy(function(){
 		var playButton = BX.findChildByClassName(BX(this.id), 'vjs-play-control');
@@ -530,6 +568,7 @@ BX.Fileman.Player.prototype.init = function()
 			this.onInit(this);
 		}
 		this.fireEvent('onAfterInit');
+		this.proxyEvents();
 	}, this));
 };
 
@@ -544,7 +583,8 @@ BX.Fileman.Player.prototype.getEventList = function()
 		'Player:onPlay',
 		'Player:onPause',
 		'Player:onClick',
-		'Player:onError'
+		'Player:onError',
+		'Player:onEnded',
 	];
 };
 
@@ -570,5 +610,16 @@ BX.Fileman.Player.prototype.disableMute = function()
 		this.mute(false);
 	}, this), 100);
 };
+
+BX.Fileman.Player.prototype.proxyEvents = function()
+{
+	if(!this.inited)
+	{
+		return;
+	}
+	this.vjsPlayer.on('play', BX.proxy(function(){this.fireEvent('onPlay');}, this));
+	this.vjsPlayer.on('pause', BX.proxy(function(){this.fireEvent('onPause');}, this));
+	this.vjsPlayer.on('ended', BX.proxy(function(){this.fireEvent('onEnded');}, this));
+}
 
 })(window);

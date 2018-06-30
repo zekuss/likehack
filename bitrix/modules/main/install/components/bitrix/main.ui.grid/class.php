@@ -338,6 +338,12 @@ class CMainUIGrid extends CBitrixComponent
 			false
 		);
 
+		if (is_array($this->arParams["ROW_LAYOUT"]) && !empty($this->arParams["ROW_LAYOUT"]))
+		{
+			$this->arParams["ALLOW_COLUMNS_SORT"] = false;
+			$this->arParams["ALLOW_SORT"] = false;
+		}
+
 		return $this->arParams;
 	}
 
@@ -390,6 +396,7 @@ class CMainUIGrid extends CBitrixComponent
 		$this->arResult["DEFAULT_COLUMNS"] = $this->prepareDefaultColumns();
 		$this->arResult["DEPTH"] = $this->prepareDepth();
 		$this->arResult["MESSAGES"] = $this->prepareMessages($this->arParams["MESSAGES"]);
+		$this->arResult["LAZY_LOAD"] = $this->arParams["LAZY_LOAD"];
 
 		return $this;
 	}

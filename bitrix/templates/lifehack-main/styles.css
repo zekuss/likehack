@@ -29,9 +29,6 @@ body {
     line-height:1em;
     color:#454545;
 }
-html {
-    min-width:940px;
-}
 html,
 body {
     height:100%;
@@ -50,7 +47,6 @@ body {
 /* Header */
 header {
     //background:url(./bitrix/templates/lifehack-main/images/header-bg.jpg) no-repeat center top;
-    min-width:940px;
 }
 header .container {
     /*height:194px;*/
@@ -60,7 +56,6 @@ header .container {
 /* Content */
 section#content {
     float:left;
-    width:691px;
 }
 
 /* Sidebar */
@@ -75,7 +70,6 @@ aside {
 footer {
     background:url(/bitrix/templates/lifehack-main/images/footer-bg.png) no-repeat center top;
     margin-top:-121px;
-    min-width:940px;
 }
 footer .container {
     height:121px;

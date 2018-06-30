@@ -821,7 +821,7 @@ var focusWithoutScrolling = function(element)
 
 		BX.bind(element, "keydown", BX.proxy(this.KeyDown, this));
 
-		// Workaround for chrome bug with bugus scrollint to the top of the page (mantis:91555, mantis:93629)
+		// Workaround for chrome bug with bugus scrolling to the top of the page (mantis:91555, mantis:93629)
 		if (BX.browser.IsChrome())
 		{
 			BX.bind(window, "scroll", BX.proxy(function(e)
@@ -867,6 +867,11 @@ var focusWithoutScrolling = function(element)
 
 	BXEditorIframeView.prototype.KeyDown = function(e)
 	{
+		var
+			_this = this,
+			keyCode = e.keyCode,
+			KEY_CODES = this.editor.KEY_CODES;
+
 		this.SetFocusedFlag(true);
 		this.editor.iframeKeyDownPreventDefault = false;
 
@@ -878,9 +883,6 @@ var focusWithoutScrolling = function(element)
 		}
 
 		var
-			_this = this,
-			keyCode = e.keyCode,
-			KEY_CODES = this.editor.KEY_CODES,
 			command = this.editor.SHORTCUTS[keyCode],
 			selectedNode = this.editor.selection.GetSelectedNode(true),
 			range = this.editor.selection.GetRange(),

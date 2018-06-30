@@ -8,6 +8,7 @@
  * @property {number} [width]
  * @property {boolean} [cacheable=true]
  * @property {boolean} [autoFocus=true]
+ * @property {boolean} [printable=true]
  * @property {boolean} [allowChangeHistory=true]
  * @property {string} [requestMethod]
  * @property {object} [requestParams]
@@ -95,6 +96,7 @@ BX.SidePanel.Manager = function(options)
 
 	this.handleSliderOpen = this.handleSliderOpen.bind(this);
 	this.handleSliderOpenComplete = this.handleSliderOpenComplete.bind(this);
+	this.handleSliderClose = this.handleSliderClose.bind(this);
 	this.handleSliderCloseComplete = this.handleSliderCloseComplete.bind(this);
 	this.handleSliderLoad = this.handleSliderLoad.bind(this);
 	this.handleSliderDestroy = this.handleSliderDestroy.bind(this);
@@ -185,8 +187,9 @@ BX.SidePanel.Manager.prototype =
 			slider.setOffset(offset);
 
 			BX.addCustomEvent(slider, "SidePanel.Slider:onOpen", this.handleSliderOpen);
-			BX.addCustomEvent(slider, "SidePanel.Slider:onOpenComplete", this.handleSliderOpenComplete);
-			BX.addCustomEvent(slider, "SidePanel.Slider:onCloseComplete", this.handleSliderCloseComplete);
+			BX.addCustomEvent(slider, "SidePanel.Slider:onBeforeOpenComplete", this.handleSliderOpenComplete);
+			BX.addCustomEvent(slider, "SidePanel.Slider:onClose", this.handleSliderClose);
+			BX.addCustomEvent(slider, "SidePanel.Slider:onBeforeCloseComplete", this.handleSliderCloseComplete);
 			BX.addCustomEvent(slider, "SidePanel.Slider:onLoad", this.handleSliderLoad);
 			BX.addCustomEvent(slider, "SidePanel.Slider:onDestroy", this.handleSliderDestroy);
 		}
@@ -346,6 +349,25 @@ BX.SidePanel.Manager.prototype =
 	{
 		var count = this.openSliders.length;
 		return this.openSliders[count - 1] ? this.openSliders[count - 1] : null;
+	},
+
+	getPreviousSlider: function(currentSlider)
+	{
+		var previousSlider = null;
+		var openSliders = this.getOpenSliders();
+		currentSlider = currentSlider || this.getTopSlider();
+
+		for (var i = openSliders.length - 1; i >= 0; i--)
+		{
+			var slider = openSliders[i];
+			if (slider === currentSlider)
+			{
+				previousSlider = openSliders[i - 1] ? openSliders[i - 1] : null;
+				break;
+			}
+		}
+
+		return previousSlider;
 	},
 
 	/**
@@ -634,7 +656,6 @@ BX.SidePanel.Manager.prototype =
 		BX.onCustomEvent(window, event.getFullName(), [event]);
 	},
 
-
 	/**
 	 * @private
 	 * @returns {number}
@@ -684,9 +705,19 @@ BX.SidePanel.Manager.prototype =
 			return;
 		}
 
-		this.getTopSlider() && this.getTopSlider().hideCLoseBtn();
-
 		var slider = event.getSlider();
+
+		if (this.getTopSlider())
+		{
+			this.getTopSlider().hideOverlay();
+			this.getTopSlider().hideCloseBtn();
+			this.getTopSlider().hidePrintBtn();
+		}
+		else
+		{
+			slider.setOverlayAnimation(true);
+		}
+
 		this.addOpenSlider(slider);
 		this.losePageFocus();
 
@@ -713,6 +744,22 @@ BX.SidePanel.Manager.prototype =
 	 * @private
 	 * @param {BX.SidePanel.Event} event
 	 */
+	handleSliderClose: function(event)
+	{
+		var previousSlider = this.getPreviousSlider();
+		var topSlider = this.getTopSlider();
+
+		if (previousSlider)
+		{
+			previousSlider.unhideOverlay();
+			topSlider && topSlider.hideOverlay();
+		}
+	},
+
+	/**
+	 * @private
+	 * @param {BX.SidePanel.Event} event
+	 */
 	handleSliderCloseComplete: function(event)
 	{
 		var slider = event.getSlider();
@@ -733,8 +780,8 @@ BX.SidePanel.Manager.prototype =
 		var slider = event.getSlider();
 
 		BX.removeCustomEvent(slider, "SidePanel.Slider:onOpen", this.handleSliderOpen);
-		BX.removeCustomEvent(slider, "SidePanel.Slider:onOpenComplete", this.handleSliderOpenComplete);
-		BX.removeCustomEvent(slider, "SidePanel.Slider:onCloseComplete", this.handleSliderCloseComplete);
+		BX.removeCustomEvent(slider, "SidePanel.Slider:onBeforeOpenComplete", this.handleSliderOpenComplete);
+		BX.removeCustomEvent(slider, "SidePanel.Slider:onBeforeCloseComplete", this.handleSliderCloseComplete);
 		BX.removeCustomEvent(slider, "SidePanel.Slider:onLoad", this.handleSliderLoad);
 		BX.removeCustomEvent(slider, "SidePanel.Slider:onDestroy", this.handleSliderDestroy);
 
@@ -754,9 +801,15 @@ BX.SidePanel.Manager.prototype =
 	{
 		this.removeOpenSlider(slider);
 
+		slider.unhideOverlay();
+
 		if (this.getTopSlider())
 		{
 			this.getTopSlider().showCloseBtn();
+			if (this.getTopSlider().isPrintable())
+			{
+				this.getTopSlider().showPrintBtn();
+			}
 			this.getTopSlider().focus();
 		}
 		else

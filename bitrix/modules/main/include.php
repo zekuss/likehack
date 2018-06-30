@@ -98,7 +98,7 @@ if(!defined("BX_COMP_MANAGED_CACHE") && COption::GetOptionString("main", "compon
 require_once($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/filter_tools.php");
 require_once($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/ajax_tools.php");
 
-/*ZDUyZmZNWI5Mjk0N2E3YzVlMGU3ZjZhZmI0ZGI4ZDk0YWVjYzU=*/class CBXFeatures{ public static function IsFeatureEnabled($_619108270){ return true;} public static function IsFeatureEditable($_619108270){ return true;} public static function SetFeatureEnabled($_619108270, $_1767778780= true){} public static function SaveFeaturesSettings($_2037758882, $_1333155320){} public static function GetFeaturesList(){ return array();} public static function InitiateEditionsSettings($_827372274){} public static function ModifyFeaturesSettings($_827372274, $_1430161380){} public static function IsFeatureInstalled($_619108270){ return true;}}/**/			//Do not remove this
+/*ZDUyZmZY2I0ZDcxOTUxYzczNzk4ZTY1OGViYzA2NTEwMjU5MzU=*/class CBXFeatures{ public static function IsFeatureEnabled($_1538830315){ return true;} public static function IsFeatureEditable($_1538830315){ return true;} public static function SetFeatureEnabled($_1538830315, $_1963132079= true){} public static function SaveFeaturesSettings($_953719017, $_1632359873){} public static function GetFeaturesList(){ return array();} public static function InitiateEditionsSettings($_303349888){} public static function ModifyFeaturesSettings($_303349888, $_133502229){} public static function IsFeatureInstalled($_1538830315){ return true;}}/**/			//Do not remove this
 
 //component 2.0 template engines
 $GLOBALS["arCustomTemplateEngines"] = array();
@@ -194,6 +194,7 @@ require_once($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/classes/general/ur
 		"CAdminCalendar" => "interface/admin_calendar.php",
 		"CAdminViewTabControl" => "interface/admin_viewtabcontrol.php",
 		"CAdminTabEngine" => "interface/admin_tabengine.php",
+		"CCaptcha" => "classes/general/captcha.php",
 
 		//deprecated
 		"CHTMLPagesCache" => "lib/composite/helper.php",

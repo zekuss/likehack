@@ -1,0 +1,490 @@
+body {
+    background: url("/bitrix/templates/lifehack-main/images/hexagon-portrait-letter-1.png") repeat;
+}
+
+/* Заголовок сайта */
+.top-menu {
+    height:65px;
+}
+.logo {
+    max-width: 195px;
+    margin: auto;
+}
+
+.auth-line {
+    margin: 0 auto;
+    text-align: center;
+    height: 45px;
+    overflow: hidden;
+}
+
+.auth-form__line {
+    border-bottom: #ccc 1px dotted;
+    color: #95a1a8;
+    line-height: 20px;
+    padding: 2px;
+}
+
+
+.bx-system-auth-form .form-group{
+    margin-bottom: 5px;
+}
+.bx-system-auth-form input[type="checkbox"]{
+    margin-top: 2px;
+}
+.bx-system-auth-form .form-control{
+    height:20px;
+}
+
+/*  Список блога  */
+.blog-post-title {
+    margin-bottom: 5px;
+    padding: 7px 0 15px;
+}
+
+h1, h2, h3,
+.blog-post-title a,
+.blog-post-title span {
+    color: #33b111;
+    margin: 0;
+    font-weight: 600;
+    padding: 7px 0 15px;
+    font-size: 18px;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+
+.bx-newsdetail-title {
+    padding: 25px 0 15px;
+}
+
+.blog-small-text a,
+.blog-small-text {
+    font-size: 10px;
+    color: #777;
+}
+
+.blog-post-meta-util {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.blog-post-meta-util .blog-small-text {
+    float: left;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 5px;
+}
+
+.blog-post-content {
+    /* background: #FFF; */
+    border: 1px dotted #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.blog-post .bx-newslist-tags {
+    margin-top: 5px;
+}
+
+.bx-newslist-tags a,
+.bx-newsdetail-tags a {
+    text-decoration: none;
+    font-size: 11px;
+    padding: 0 4px 1px;
+    margin: 0 2px 0 0;
+    line-height: 12px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(bottom, #f3f3f3 100%, #f3f3f3 100%);
+    background: linear-gradient(to top, #f3f3f3 100%, #f3f3f3 100%);
+    color: #666;
+    border: 1px solid;
+    border-color: #e0e0e0 #c4c4c4 #adadad #cecece;
+    border-radius: 3px;
+    border-collapse: separate;
+    white-space: nowrap;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.blog-post-rating {
+    width: 100%;
+    top: 26px;
+    z-index: 100;
+    background: #00a0d4;
+    padding-top: 3px;
+}
+
+.bx-newsdetail .blog-post-rating {
+    top: 45px;
+    height: 30px;
+    padding-top: 6px;
+}
+
+.bx-newsdetail .blog-post-rating .bx-rating,
+.bx-newsdetail-block .bx-newslist-show-counter {
+    font-size: 15px;
+}
+
+.blog-post-rating .bx-rating, .bx-newslist-show-counter {
+    color: #FFF;
+}
+
+.blog-post-rating .bx-rating .fa,
+.yellow-text {
+    color: #ffd600;
+}
+
+.bx-newslist-show-counter {
+    text-align: left;
+    position: absolute;
+    z-index: 101;
+    top: 28px;
+    padding-left: 5px;
+}
+
+.bx-newsdetail-block .bx-newslist-show-counter {
+    top: 75px;
+}
+
+.bx-newslist-info {
+    float: left;
+    color: #a4a4a4;
+    margin-right: 3px;
+}
+
+.blog-post-tag a, .blog-post-tag span {
+    line-height: 20px;
+}
+
+.bx-newslist-block {
+    border-radius: 10px;
+    overflow: hidden;
+    border: #ccc 1px dotted;
+}
+
+.blog-post .bx-newslist-img img,
+.bx-newsdetail-img img {
+    border-radius: 10px;
+    margin-bottom: -30px;
+    width: 100%;
+    height: 100%;
+}
+
+.bx-newslist-block,
+.bx-newsdetail-content {
+    padding: 15px 5px;
+    border-radius: 10px;
+}
+
+.icon-youtube {
+    background: url(/bitrix/templates/lifehack-main/images/youtube.png);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    content: "";
+    position: absolute;
+    top: 48px;
+    right: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header .container {
+    padding: 10px;
+}
+
+.container {
+    /* background: url(https://inspirationhut.net/wp-content/uploads/2014/09/rice-paper.jpg) repeat 194px; */
+    border: #e9e9e9 5px solid;
+    background: #f4f4f4;
+    /* border-left: #e9e9e9 1px solid; */
+    box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+}
+.wrap {
+    background:url(/bitrix/templates/lifehack-main/images/fon.jpg) repeat;
+}
+
+.bg-container,
+.bx-auth,
+.bform {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px #ccc dotted;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.text-block {
+    padding: 10px;
+}
+
+
+.blog-post-title a:visited {
+    color: #33b111;
+}
+
+/* Фильтр */
+.bx-flat-filter {
+    margin: 0px;
+}
+
+.bx-flat-filter .bx-filter-section {
+    background: transparent;
+}
+
+.bx-flat-filter .bx-filter-title {
+    color: #fff;
+    padding: 5px;
+    background: #00a0d4;
+}
+
+.bx-flat-filter .bx-filter-parameters-box.active .bx-filter-parameters-box-title span {
+}
+
+/* Кнопки */
+.btn-primary {
+    background-color: #33b111;
+    border-color: #33b111;
+}
+
+
+.btn-link {
+    font-weight: normal;
+    color: #ff7b01;
+    border-radius: 0;
+}
+
+
+.bx-newslist-more .btn-primary {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Детальная страница */
+
+.l1-youtube-player {
+    border-radius: 5px;
+}
+
+/* Левое меню */
+.bx_vertical_menu_advanced.bx_blue {
+    border-left-color: #33b111 !important;
+}
+.bx_vertical_menu_advanced .bx_hma_one_lvl>a {
+    color: #95a1a8 !important;
+}
+li.bx_hma_one_lvl.current>a {
+    color: #ff7b01 !important;
+}
+
+
+/* Хлебные крошки */
+.bx-breadcrumb {
+    margin: 0px;
+}
+
+.bx-breadcrumb .bx-breadcrumb-item span
+{
+    text-decoration: none;
+    font-size: 11px;
+    padding: 0 4px 1px;
+    margin: 0 2px 0 0;
+    line-height: 12px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: -webkit-linear-gradient(bottom, #f3f3f3 100%, #f3f3f3 100%);
+    background: linear-gradient(to top, #f3f3f3 100%, #f3f3f3 100%);
+    color: #666;
+    border: 1px solid;
+    border-color: #e0e0e0 #c4c4c4 #adadad #cecece;
+    border-radius: 3px;
+    border-collapse: separate;
+    white-space: nowrap;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+/***************  Страница поиска  ******************/
+/* Теги */
+.search-page--tags {
+
+}
+
+.search-page--form {
+    margin-bottom: 15px;
+    padding: 10px;
+    height: 200px;
+}
+
+.search-suggest {
+    background-color: #fff;
+}
+.search-item h4 a {
+    text-transform: uppercase;
+}
+.search-item b {
+    color:#33b111 ;
+}
+
+.search-preview img {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+    max-width: 200px;
+}
+
+/* Регистрация */
+ .bx-auth-profile .form-control,
+ .bx-auth-reg .form-control {
+    margin-bottom: 10px;
+}
+
+ /* Лайки */
+
+.asd_lik_button, .asd_fav_button {
+    width: 25px;
+    height: 25px;
+    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/fav.png) top left no-repeat;
+    cursor: pointer;
+    float: left;
+}
+
+.asd_lik_button {
+    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/like_hand.png) top left no-repeat;
+    background-size: contain;
+}
+
+.asd_liked {
+    background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/unlike_hand.png) top left no-repeat;
+    background-size: contain;
+}
+
+.asd_fav_count {
+    /* width: 25px; */
+    height: 16px;
+    /* background: url(/bitrix/templates/lifehack-main/components/bitrix/asd.favorite.button/main/images/fav_count.png) top left no-repeat; */
+    float: left;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #ffd600;
+    line-height: 16px;
+    text-align: center;
+    padding: 0 0 0 1px;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+
+.btn-menu-mobile {
+    width: 50px;
+    height: 50px;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    background: #00a0d4;
+    top: 180px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.btn-menu-mobile a {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-menu-mobile a span{
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .asd_lik_button, .asd_fav_button {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+.social-link {
+    float: left;
+    display: block;
+    width: 150px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+
+
+/* CUSTOM */
+h1, h2, h3, h4,
+.blog-post-title,
+.blog-post-title a{
+    font-family: 'Kurale';
+    color: #33b111;
+}
+
+.bx-newsdetail-content,
+.bx-newslist-content{
+    font-family: 'Kurale';
+    font-size: 24px;
+    line-height: 26px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .blog-post .bx-newslist-img img {
+        height: 220px;
+    }
+
+    .bx-newsdetail-content,
+    .bx-newslist-content{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .bx-newslist-block .bx-newslist-content {
+        height: 55px;
+    }
+    .bx-newslist-container {
+        height: 400px !important;
+    }
+
+    .bx-newslist-block .bx-newslist-content {
+        overflow: hidden;
+        z-index: 200;
+    }
+
+    .bx-newslist-block .bx-newslist-content:hover ,
+    .bx-newslist-block .bx-newslist-content:focus {
+        min-height: 55px;
+        height: 100%;
+    }
+
+    .blog-post-title, .blog-post-title a {
+        white-space: nowrap; /* Запрещаем перенос строк */
+        overflow: hidden; /* Обрезаем все, что не помещается в область */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+        color: #33b111;
+    }
+
+    .blog-post-title {
+        padding-bottom: 0px;
+    }
+
+}

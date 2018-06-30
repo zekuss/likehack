@@ -1112,7 +1112,7 @@ abstract class CAllUser extends CDBResult
 		return false;
 	}
 
-	public function ChangePassword($LOGIN, $CHECKWORD, $PASSWORD, $CONFIRM_PASSWORD, $SITE_ID=false, $captcha_word = "", $captcha_sid = 0)
+	public function ChangePassword($LOGIN, $CHECKWORD, $PASSWORD, $CONFIRM_PASSWORD, $SITE_ID=false, $captcha_word = "", $captcha_sid = 0, $authActions = true)
 	{
 		/** @global CMain $APPLICATION */
 		global $DB, $APPLICATION;
@@ -1201,7 +1201,7 @@ abstract class CAllUser extends CDBResult
 			// change the password
 			$ID = $res["ID"];
 			$obUser = new CUser;
-			$res = $obUser->Update($ID, array("PASSWORD"=>$arParams["PASSWORD"]));
+			$res = $obUser->Update($ID, array("PASSWORD"=>$arParams["PASSWORD"]), $authActions);
 			if(!$res && $obUser->LAST_ERROR <> '')
 				return array("MESSAGE"=>$obUser->LAST_ERROR."<br>", "TYPE"=>"ERROR");
 			CUser::SendUserInfo($ID, $arParams["SITE_ID"], GetMessage('CHANGE_PASS_SUCC'), true, 'USER_PASS_CHANGED');
@@ -2137,7 +2137,7 @@ abstract class CAllUser extends CDBResult
 		return $rs;
 	}
 
-	public function Update($ID, $arFields)
+	public function Update($ID, $arFields, $authActions = true)
 	{
 		/** @global CUserTypeManager $USER_FIELD_MANAGER */
 		global $DB, $USER_FIELD_MANAGER, $CACHE_MANAGER, $USER;
@@ -2167,6 +2167,7 @@ abstract class CAllUser extends CDBResult
 				$arUser = $rUser->Fetch();
 			}
 
+			$newPassword = "";
 			if(is_set($arFields, "PASSWORD"))
 			{
 				$original_pass = $arFields["PASSWORD"];
@@ -2177,10 +2178,16 @@ abstract class CAllUser extends CDBResult
 					",.<>/?;:[]{}\\|~!@#\$%^&*()-_+=",
 				));
 				$arFields["PASSWORD"] = $salt.md5($salt.$arFields["PASSWORD"]);
+
 				if($arUser)
 				{
-					if($arUser["PASSWORD"] != $arFields["PASSWORD"])
+					$oldSalt = substr($arUser["PASSWORD"], 0, 8);
+					$newPassword = $oldSalt.md5($oldSalt.$original_pass);
+
+					if($newPassword <> $arUser["PASSWORD"])
+					{
 						$DB->Query("DELETE FROM b_user_stored_auth WHERE USER_ID=".$ID);
+					}
 				}
 				if(COption::GetOptionString("main", "event_log_password_change", "N") === "Y")
 					CEventLog::Log("SECURITY", "USER_PASSWORD_CHANGED", "main", $ID);
@@ -2268,7 +2275,7 @@ abstract class CAllUser extends CDBResult
 				CUser::UpdateDigest($arUser["ID"], $original_pass);
 			}
 
-			if($arUser)
+			if($arUser && $authActions == true)
 			{
 				$authAction = false;
 				if(isset($arFields["ACTIVE"]) && $arUser["ACTIVE"] == "Y" && $arFields["ACTIVE"] == "N")
@@ -2289,7 +2296,7 @@ abstract class CAllUser extends CDBResult
 					$internalUser = false;
 				}
 
-				if($internalUser == true && isset($arFields["PASSWORD"]) && $arUser["PASSWORD"] <> $arFields["PASSWORD"])
+				if($internalUser == true && isset($arFields["PASSWORD"]) && $newPassword <> $arUser["PASSWORD"])
 				{
 					$authAction = true;
 					if(is_object($USER) && $USER->GetID() == $ID)
@@ -3622,6 +3629,11 @@ abstract class CAllUser extends CDBResult
 			return;
 		}
 
+		if(!is_array($_SESSION["AUTH_ACTIONS_PERFORMED"]))
+		{
+			$_SESSION["AUTH_ACTIONS_PERFORMED"] = array();
+		}
+
 		$user_id = $this->GetID();
 
 		//calculate a session lifetime
@@ -3653,15 +3665,15 @@ abstract class CAllUser extends CDBResult
 				//clear expired records for the user
 				Main\UserAuthActionTable::deleteByFilter(array(
 					"=USER_ID" => $user_id,
-					"<=ACTION_DATE" => $now,
+					"<ACTION_DATE" => $date,
 				));
 				$deleted = true;
 			}
 
-			if($this->IsJustAuthorized())
+			if(isset($_SESSION["AUTH_ACTIONS_PERFORMED"][$action["ID"]]))
 			{
-				//no need to update the session
-				break;
+				//already processed the action in this session
+				continue;
 			}
 
 			/** @var Main\Type\DateTime() $actionDate */
@@ -3669,6 +3681,15 @@ abstract class CAllUser extends CDBResult
 
 			if($actionDate >= $date && $actionDate <= $now)
 			{
+				//remember that we already did the action
+				$_SESSION["AUTH_ACTIONS_PERFORMED"][$action["ID"]] = true;
+
+				if($this->IsJustAuthorized())
+				{
+					//no need to update the session
+					continue;
+				}
+
 				switch($action["ACTION"])
 				{
 					case Main\UserAuthActionTable::ACTION_LOGOUT:

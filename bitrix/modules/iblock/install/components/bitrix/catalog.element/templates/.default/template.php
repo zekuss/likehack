@@ -345,7 +345,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 																					data-onevalue="<?=$value['ID']?>">
 																					<div class="product-item-scu-item-color-block">
 																						<div class="product-item-scu-item-color" title="<?=$value['NAME']?>"
-																							style="background-image: url(<?=$value['PICT']['SRC']?>);">
+																							style="background-image: url('<?=$value['PICT']['SRC']?>');">
 																						</div>
 																					</div>
 																				</li>
@@ -640,14 +640,10 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 												<div class="product-item-detail-info-container-title"><?=Loc::getMessage('CATALOG_QUANTITY')?></div>
 												<div class="product-item-amount">
 													<div class="product-item-amount-field-container">
-														<a class="product-item-amount-field-btn-minus" id="<?=$itemIds['QUANTITY_DOWN_ID']?>"
-															href="javascript:void(0)" rel="nofollow">
-														</a>
-														<input class="product-item-amount-field" id="<?=$itemIds['QUANTITY_ID']?>" type="tel"
+														<span class="product-item-amount-field-btn-minus no-select" id="<?=$itemIds['QUANTITY_DOWN_ID']?>"></span>
+														<input class="product-item-amount-field" id="<?=$itemIds['QUANTITY_ID']?>" type="number"
 															value="<?=$price['MIN_QUANTITY']?>">
-														<a class="product-item-amount-field-btn-plus" id="<?=$itemIds['QUANTITY_UP_ID']?>"
-															href="javascript:void(0)" rel="nofollow">
-														</a>
+														<span class="product-item-amount-field-btn-plus no-select" id="<?=$itemIds['QUANTITY_UP_ID']?>"></span>
 														<span class="product-item-amount-description-container">
 															<span id="<?=$itemIds['QUANTITY_MEASURE']?>">
 																<?=$actualItem['ITEM_MEASURE']['TITLE']?>
@@ -1347,7 +1343,7 @@ if (!empty($arParams['LABEL_PROP_POSITION']))
 											?>
 											<div class="product-item-selected-scu product-item-selected-scu-color selected"
 												title="<?=$value['NAME']?>"
-												style="background-image: url(<?=$value['PICT']['SRC']?>); display: none;"
+												style="background-image: url('<?=$value['PICT']['SRC']?>'); display: none;"
 												data-sku-line="<?=$i?>"
 												data-treevalue="<?=$propertyId?>_<?=$value['ID']?>"
 												data-onevalue="<?=$value['ID']?>">

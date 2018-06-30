@@ -52,6 +52,8 @@ class Base
 	 * @param string $entityName
 	 *
 	 * @return Base
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
 	 */
 	public static function getInstance($entityName)
 	{
@@ -60,7 +62,13 @@ class Base
 		return self::getInstanceDirect($entityName);
 	}
 
-
+	/**
+	 * @param \Bitrix\Main\Entity\DataManager|string $className
+	 *
+	 * @return mixed
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
+	 */
 	protected static function getInstanceDirect($className)
 	{
 		if (empty(self::$instances[$className]))
@@ -70,6 +78,9 @@ class Base
 			$entity->initialize($className);
 			$entity->postInitialize();
 
+			// call user-defined postInitialize
+			$className::postInitialize($entity);
+
 			self::$instances[$className] = $entity;
 		}
 
@@ -78,6 +89,7 @@ class Base
 
 	/**
 	 * Fields factory
+	 *
 	 * @param string $fieldName
 	 * @param array  $fieldInfo
 	 *
@@ -160,6 +172,10 @@ class Base
 		$this->isUtm = $className::isUtm();
 	}
 
+	/**
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
+	 */
 	public function postInitialize()
 	{
 		// basic properties
@@ -216,6 +232,21 @@ class Base
 		}
 
 		// attach userfields
+		if (empty($this->uf_id))
+		{
+			// try to find ENTITY_ID by map
+			$userTypeManager = Main\Application::getUserTypeManager();
+			if($userTypeManager)
+			{
+				$entityList = $userTypeManager->getEntityList();
+				$ufId = is_array($entityList) ? array_search($this->className, $entityList) : false;
+				if ($ufId !== false)
+				{
+					$this->uf_id = $ufId;
+				}
+			}
+		}
+
 		if (!empty($this->uf_id))
 		{
 			Main\UserFieldTable::attachFields($this, $this->uf_id);
@@ -226,6 +257,8 @@ class Base
 	 * @param Field $field
 	 *
 	 * @return bool
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
 	 */
 	protected function appendField(Field $field)
 	{
@@ -289,6 +322,8 @@ class Base
 	 * @param null|string $fieldName
 	 *
 	 * @return Field|false
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
 	 */
 	public function addField($fieldInfo, $fieldName = null)
 	{
@@ -367,10 +402,12 @@ class Base
 
 	/**
 	 * @deprecated
+	 *
 	 * @param $name
 	 *
 	 * @return UField
-	 * @throws \Exception
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
 	 */
 	public function getUField($name)
 	{
@@ -386,9 +423,11 @@ class Base
 
 	/**
 	 * @deprecated
+	 *
 	 * @param $name
 	 *
 	 * @return bool
+	 * @throws Main\SystemException
 	 */
 	public function hasUField($name)
 	{
@@ -398,7 +437,7 @@ class Base
 
 			if (strlen($this->uf_id))
 			{
-				/** @var \CAllUserTypeManager $USER_FIELD_MANAGER */
+				/** @var \CUserTypeManager $USER_FIELD_MANAGER */
 				global $USER_FIELD_MANAGER;
 
 				foreach ($USER_FIELD_MANAGER->getUserFields($this->uf_id) as $info)
@@ -410,7 +449,7 @@ class Base
 					if ($info['USER_TYPE_ID'] == 'iblock_section')
 					{
 						$info['FIELD_NAME'] .= '_BY';
-						$this->u_fields[$info['FIELD_NAME']] = new UField($info, $this);
+						$this->u_fields[$info['FIELD_NAME']] = new UField($info);
 						$this->u_fields[$info['FIELD_NAME']]->setEntity($this);
 					}
 				}
@@ -463,10 +502,13 @@ class Base
 
 	/**
 	 * @return Main\DB\Connection
+	 * @throws Main\SystemException
 	 */
 	public function getConnection()
 	{
-		return Main\Application::getInstance()->getConnectionPool()->getConnection($this->connectionName);
+		/** @var Main\DB\Connection $conn */
+		$conn = Main\Application::getInstance()->getConnectionPool()->getConnection($this->connectionName);
+		return $conn;
 	}
 
 	public function getDBTableName()
@@ -588,6 +630,14 @@ class Base
 		$this->isClone = true;
 	}
 
+	/**
+	 * @param Query $query
+	 * @param null  $entity_name
+	 *
+	 * @return Base
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
+	 */
 	public static function getInstanceByQuery(Query $query, &$entity_name = null)
 	{
 		if ($entity_name === null)
@@ -693,7 +743,8 @@ class Base
 	 *
 	 * @return Base
 	 *
-	 * @throws \Bitrix\Main\ArgumentException
+	 * @throws Main\ArgumentException
+	 * @throws Main\SystemException
 	 */
 	public static function compileEntity($entityName, $fields = null, $parameters = array())
 	{
@@ -766,6 +817,7 @@ class Base
 
 	/**
 	 * @return string[] Array of SQL queries
+	 * @throws Main\SystemException
 	 */
 	public function compileDbTableStructureDump()
 	{
@@ -798,6 +850,7 @@ class Base
 	 * Creates table according to Fields collection
 	 *
 	 * @return void
+	 * @throws Main\SystemException
 	 */
 	public function createDbTable()
 	{
@@ -836,10 +889,13 @@ class Base
 
 	/**
 	 * Reads data from cache.
-	 * @param int $ttl TTL.
-	 * @param string $cacheId The cache ID.
-	 * @param bool $countTotal Whether to read total count from the cache.
+	 *
+	 * @param int    $ttl        TTL.
+	 * @param string $cacheId    The cache ID.
+	 * @param bool   $countTotal Whether to read total count from the cache.
+	 *
 	 * @return Main\DB\ArrayResult|null
+	 * @throws Main\SystemException
 	 */
 	public function readFromCache($ttl, $cacheId, $countTotal = false)
 	{
@@ -867,10 +923,13 @@ class Base
 	}
 
 	/**
-	 * @param Main\DB\Result $result A query result to cache.
-	 * @param string $cacheId The cache ID.
-	 * @param bool $countTotal Whether to write total count to the cache.
+	 * @param Main\DB\Result $result     A query result to cache.
+	 * @param string         $cacheId    The cache ID.
+	 * @param bool           $countTotal Whether to write total count to the cache.
+	 *
 	 * @return Main\DB\ArrayResult
+	 * @throws Main\ObjectPropertyException
+	 * @throws Main\SystemException
 	 */
 	public function writeToCache(Main\DB\Result $result, $cacheId, $countTotal = false)
 	{
@@ -921,6 +980,8 @@ class Base
 
 	/**
 	 * Cleans all cache entries for the entity.
+	 *
+	 * @throws Main\SystemException
 	 */
 	public function cleanCache()
 	{
@@ -930,8 +991,12 @@ class Base
 
 	/**
 	 * Sets a flag indicating full text index support for a field.
+	 *
 	 * @param string $field
-	 * @param bool $mode
+	 * @param bool   $mode
+	 *
+	 * @throws Main\ArgumentNullException
+	 * @throws Main\ArgumentOutOfRangeException
 	 */
 	public function enableFullTextIndex($field, $mode = true)
 	{
@@ -948,8 +1013,12 @@ class Base
 
 	/**
 	 * Returns true if full text index is enabled for a field.
+	 *
 	 * @param string $field
+	 *
 	 * @return bool
+	 * @throws Main\ArgumentNullException
+	 * @throws Main\ArgumentOutOfRangeException
 	 */
 	public function fullTextIndexEnabled($field)
 	{

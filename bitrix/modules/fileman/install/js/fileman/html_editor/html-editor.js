@@ -304,6 +304,7 @@
 				{
 					clearInterval(_this.statusInterval);
 				}
+				_this.iframeView.stopBugusScroll = false;
 			});
 			BX.addCustomEvent(this, "OnTextareaFocus", function()
 			{

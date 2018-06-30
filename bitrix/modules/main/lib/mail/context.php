@@ -12,6 +12,20 @@ class Context
 	const CAT_EXTERNAL = 1;
 
 	protected $category;
+	protected $smtp;
+
+	public function __construct(array $params = null)
+	{
+		if (!empty($params) && is_array($params))
+		{
+			foreach ($params as $name => $value)
+			{
+				$setter = sprintf('set%s', $name);
+				if (is_callable(array($this, $setter)))
+					$this->$setter($value);
+			}
+		}
+	}
 
 	/**
 	 * @param int $category See Context CAT_* constants.
@@ -29,5 +43,23 @@ class Context
 	public function getCategory()
 	{
 		return $this->category;
+	}
+
+	/**
+	 * @param Smtp\Config $config Smtp config.
+	 * @return $this
+	 */
+	public function setSmtp(Smtp\Config $config)
+	{
+		$this->smtp = $config;
+		return $this;
+	}
+
+	/**
+	 * @return Smtp\Config|null
+	 */
+	public function getSmtp()
+	{
+		return $this->smtp;
 	}
 }

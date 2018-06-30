@@ -69,11 +69,16 @@ class CSearchLanguage
 			$file_name = $dir_name."/trigram";
 			if(file_exists($file_name) && is_file($file_name))
 			{
-				$cache_id = filemtime($file_name).",".$file_name;
+				$cache_id = filemtime($file_name).",v1,".$file_name;
 				$obCache = new CPHPCache;
 				if($obCache->StartDataCache(360000, $cache_id, "search"))
 				{
 					$text = file_get_contents($file_name);
+					$keyboard = $this->GetKeyboardLayout();
+					if (defined("BX_UTF") && isset($keyboard["trigram_charset"]))
+					{
+						$text = $GLOBALS["APPLICATION"]->ConvertCharset($text, $keyboard["trigram_charset"], "utf8");
+					}
 					$ar = explode("\n", $text);
 					foreach($ar as $trigramm)
 					{
@@ -221,9 +226,26 @@ class CSearchLanguage
 		}
 
 		if(isset($keyboards[$combo]))
-			return strtr($text, $keyboards[$combo]);
+		{
+			if (defined("BX_UTF"))
+			{
+				$text = static::StrToArray($text);
+				foreach ($text as $pos => $char)
+				{
+					if (isset($keyboards[$combo][$char]))
+						$text[$pos] = $keyboards[$combo][$char];
+				}
+				return implode('', $text);
+			}
+			else
+			{
+				return strtr($text, $keyboards[$combo]);
+			}
+		}
 		else
+		{
 			return $text;
+		}
 	}
 
 	//This function converts text into array of character positions
@@ -381,7 +403,7 @@ class CSearchLanguage
 		$i = 0;
 		foreach($arDetectionFrom as $lang_from => $arTemp)
 		{
-			$arScanCodes = $languages_from[$lang_from];
+			$arScanCodes = $language_scancodes[$lang_from];
 			foreach($arLanguages as $lang)
 			{
 				$lang_from_to = $lang_from."=>".$lang;
@@ -390,8 +412,12 @@ class CSearchLanguage
 
 				$ob = CSearchLanguage::GetLanguage($lang);
 
+				$alt_text = CSearchLanguage::ConvertKeyboardLayout($text, $lang_from, $lang);
+				$arScanCodes = $ob->ConvertToScancode($alt_text, true);
+
 				$arDetection[$lang_from_to][] = $ob->HasBigrammInfo();
 				$arDetection[$lang_from_to][] = $ob->CheckTrigrams($arScanCodes);
+				$arDetection[$lang_from_to][] = -count(array_filter($arScanCodes));
 
 				//Calculate how far sequence of scan codes
 				//is from language model
@@ -402,7 +428,6 @@ class CSearchLanguage
 				$arDetection[$lang_from_to][] = $ob;
 				$arDetection[$lang_from_to][] = $arScanCodes;
 
-				$alt_text = CSearchLanguage::ConvertKeyboardLayout($text, $lang_from, $lang);
 				$arDetection[$lang_from_to][] = $alt_text !== $text;
 				$arDetection[$lang_from_to][] = $i;
 				$arDetection[$lang_from_to][] = $lang_from_to;
@@ -433,27 +458,24 @@ class CSearchLanguage
 			$c = count($a);
 			for($i = 1; $i < $c; $i++)
 			{
-				if($i == 2)
+				//Delayed deviation calculation
+				if(is_object($a[$i]))
 				{
-					//Delayed deviation calculation
-					if(is_object($a[2]))
-					{
-						$deviation = $a[2]->GetDeviation($a[3]);
-						$a[2] = $deviation[1];
-						if(count($a[3]) > 3)
-							$a[3] = intval($deviation[0]*100);
-						else
-							$a[3] = 100;
-					}
-					if(is_object($b[2]))
-					{
-						$deviation = $b[2]->GetDeviation($b[3]);
-						$b[2] = $deviation[1];
-						if(count($b[3]) > 3)
-							$b[3] = intval($deviation[0]*100);
-						else
-							$b[3] = 100;
-					}
+					$deviation = $a[$i]->GetDeviation($a[$i+1]);
+					$a[$i] = $deviation[1];
+					if(count($a[$i+1]) > 3)
+						$a[$i+1] = intval($deviation[0]*100);
+					else
+						$a[$i+1] = 100;
+				}
+				if(is_object($b[$i]))
+				{
+					$deviation = $b[$i]->GetDeviation($b[$i+1]);
+					$b[$i] = $deviation[1];
+					if(count($b[$i+1]) > 3)
+						$b[$i+1] = intval($deviation[0]*100);
+					else
+						$b[$i+1] = 100;
 				}
 
 				if($a[$i] < $b[$i])

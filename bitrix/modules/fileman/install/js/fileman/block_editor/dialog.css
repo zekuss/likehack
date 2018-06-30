@@ -155,6 +155,7 @@ WYSIWUG BUGFIXES
 	cursor: pointer;
 }
 
+.bx-block-editor-container .button-panel span.bx-editor-block-btn-html-copy:after,
 .bx-block-editor-container .button-panel span.bx-editor-block-btn-close:after,
 .bx-block-editor-container .button-panel span.bx-editor-block-btn-full:after {
 	content: '';
@@ -166,6 +167,10 @@ WYSIWUG BUGFIXES
 	background-repeat: no-repeat;
 	background-position: center;
 	vertical-align: middle;
+}
+
+.bx-block-editor-container .button-panel span.bx-editor-block-btn-html-copy:after {
+	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"%3E%3Cpath fill="%239FA4AB" d="M0.0424137707,4.21519737 L9.74626322,4.21519737 L9.74626322,13.9190468 L0.0424137707,13.9190468 L0.0424137707,4.21519737 Z M1.98318366,11.9782769 L7.80549333,11.9782769 L7.80549333,6.15596726 L1.98318366,6.15596726 L1.98318366,11.9782769 Z M11.0401098,2.92135078 L3.27703025,2.92135078 L3.27703025,0.980580892 L12.9808797,0.980580892 L12.9808797,10.6844303 L11.0401098,10.6844303 L11.0401098,2.92135078 Z"/%3E%3C/svg%3E');
 }
 
 .bx-block-editor-container .button-panel span.bx-editor-block-btn-close:after {
@@ -203,11 +208,11 @@ WYSIWUG BUGFIXES
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.bx-ie .bx-block-editor-container .edit-panel,
-.bx-ie .bx-block-editor-container .preview-panel,
-.bx-ie .bx-block-editor-container .get-html-panel{
-	display: block;
-}
+/*.bx-ie .bx-block-editor-container .edit-panel,*/
+/*.bx-ie .bx-block-editor-container .preview-panel,*/
+/*.bx-ie .bx-block-editor-container .get-html-panel{*/
+	/*display: block;*/
+/*}*/
 .editing.bx-block-editor-container .bx-editor-block-panel.preview-panel,
 .editing.bx-block-editor-container .bx-editor-block-panel.edit-panel{
 	height: 100%;
@@ -248,7 +253,7 @@ WYSIWUG BUGFIXES
 .bx-ie .bx-block-editor-container .edit-panel .dialog-part{
 	width:15%;
 	float: left;
-	min-width: auto;
+	/*min-width: auto;*/
 	height: 800px;
 }
 .bx-block-editor-container.editing .edit-panel .dialog-part{

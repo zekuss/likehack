@@ -2122,21 +2122,29 @@ BX.CViewIframeElement.prototype.load = function(successLoadCallback, errorLoadCa
 						return;
 					}
 
-					this.domElement = BX.create('iframe', {
-						props: {
-							className: 'bx-viewer-image',
-							src: data.viewUrl || data.viewerUrl
-						},
-						events: {
-							load: !BX.CViewer.browserWithDeferredCheckIframeError()? BX.proxy(function(){
-								BX.proxy(this.onLoad, this);
-								checkIframeError();
-							}, this) : BX.proxy(this.onLoad, this)
-						},
-						style: {
-							border: 'none'
-						}
-					});
+					if (data.neededOpenWindow)
+					{
+						window.open(data.viewUrl, '_blank');
+						this.domElement = BX.create('span');
+					}
+					else
+					{
+						this.domElement = BX.create('iframe', {
+							props: {
+								className: 'bx-viewer-image',
+								src: data.viewUrl || data.viewerUrl
+							},
+							events: {
+								load: !BX.CViewer.browserWithDeferredCheckIframeError()? BX.proxy(function(){
+									BX.proxy(this.onLoad, this);
+									checkIframeError();
+								}, this) : BX.proxy(this.onLoad, this)
+							},
+							style: {
+								border: 'none'
+							}
+						});
+					}
 					var transformationInProcessMessage = BX.findChildByClassName(this.contentWrap, 'bx-viewer-file-transformation-in-process-message');
 					if(transformationInProcessMessage)
 					{
@@ -5244,7 +5252,7 @@ BX.CViewer.prototype.createIframeElement = function(element, params)
 		pdfFallback: element.getAttribute('data-bx-pdfFallback'),
 		previewImage: element.getAttribute('data-bx-previewImage'),
 		transformTimeout: params.transformTimeout,
-		getLastVersionUri: params.getLastVersionUri,
+		getLastVersionUri: params.getLastVersionUri || element.getAttribute('data-bx-getLastVersionUri'),
 		buttons: []
 	});
 	if(iframeElement.isConverted())

@@ -127,7 +127,7 @@
 				preset = this.getPresetNodeById(preset);
 			}
 
-			if (!BX.hasClass(preset, this.parent.settings.classPresetCurrent))
+			if (preset && !BX.hasClass(preset, this.parent.settings.classPresetCurrent))
 			{
 				BX.addClass(preset, this.parent.settings.classPresetCurrent);
 			}
@@ -611,6 +611,18 @@
 				}
 			}
 
+			if (field.TYPE === this.parent.types.CUSTOM_DATE)
+			{
+				if (
+					(BX.type.isArray(field.VALUE.days) && field.VALUE.days.length) ||
+					(BX.type.isArray(field.VALUE.months) && field.VALUE.months.length) ||
+					(BX.type.isArray(field.VALUE.years) && field.VALUE.years.length)
+				)
+				{
+					result = false;
+				}
+			}
+
 			if (field.TYPE === this.parent.types.CUSTOM_ENTITY)
 			{
 				if (BX.type.isPlainObject(field.VALUES))
@@ -643,12 +655,13 @@
 				var datesel = '_datesel' in field.VALUES ? field.VALUES._datesel : field.SUB_TYPE.VALUE;
 
 				if (BX.type.isPlainObject(field.VALUES) &&
-					(field.VALUES._from ||
-					field.VALUES._to ||
-					field.VALUES._month ||
-					field.VALUES._quarter ||
-					field.VALUES._year ||
-					field.VALUES._days) ||
+					(field.VALUES._from || field.VALUES._to || field.VALUES._quarter ||
+					(field.VALUES._month && !BX.type.isArray(field.VALUES._month)) ||
+					(field.VALUES._year && !BX.type.isArray(field.VALUES._year)) ||
+					(field.VALUES._days) && !BX.type.isArray(field.VALUES._days)) ||
+					(BX.type.isArray(field.VALUES._days) && field.VALUES._days.length) ||
+					(BX.type.isArray(field.VALUES._month) && field.VALUES._month.length) ||
+					(BX.type.isArray(field.VALUES._year) && field.VALUES._year.length) ||
 					(
 						datesel === this.parent.dateTypes.CURRENT_DAY ||
 						datesel === this.parent.dateTypes.CURRENT_WEEK ||
@@ -895,6 +908,11 @@
 					break;
 				}
 
+				case this.parent.types.CUSTOM_DATE : {
+					control = this.parent.getFields().createCustomDate(fieldData);
+					break;
+				}
+
 				case this.parent.types.CUSTOM : {
 					control = this.parent.getFields().createCustom(fieldData);
 					break;
@@ -955,7 +973,8 @@
 								datesel === dateType.YEAR ||
 								datesel === dateType.MONTH ||
 								datesel === dateType.QUARTER ||
-								datesel === dateType.NONE)
+								datesel === dateType.NONE ||
+								datesel === dateType.CUSTOM_DATE)
 							{
 								delete fields[key];
 							}
@@ -1113,6 +1132,15 @@
 									'_from': '',
 									'_to': '',
 									'_days': ''
+								};
+								break;
+							}
+
+							case this.parent.types.CUSTOM_DATE : {
+								fieldData.VALUE = {
+									'days': [],
+									'months': [],
+									'years': []
 								};
 								break;
 							}

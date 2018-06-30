@@ -75,7 +75,7 @@ CJSCore::RegisterExt('userfield_address', array(
 	'js' => array('/bitrix/js/fileman/userfield/address.js'),
 	'css' => array('/bitrix/js/fileman/userfield/address.css'),
 	'lang' => '/bitrix/modules/fileman/lang/'.LANGUAGE_ID.'/js_userfield_address.php',
-	'rel' => array('google_map', 'google_geocoder', 'google_autocomplete', 'popup'),
+	'rel' => array('uf', 'google_map', 'google_geocoder', 'google_autocomplete', 'popup'),
 ));
 
 //on update method still not exist

@@ -44,6 +44,7 @@ class Sanitizer
 		$sanitizer = new \CBXSanitizer();
 		$sanitizer->setLevel(\CBXSanitizer::SECURE_LEVEL_LOW);
 		$sanitizer->addTags($tags);
+		$sanitizer->applyDoubleEncode(false);
 		$html = $sanitizer->sanitizeHtml($html);
 
 		return $html;

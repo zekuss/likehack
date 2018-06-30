@@ -3,6 +3,7 @@
 
 <head>
     <title><?$APPLICATION->ShowTitle()?></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?
     $APPLICATION->SetTitle($APPLICATION->GetTitle(true));
 
@@ -65,6 +66,7 @@
     <form action="/search/">
         <div class="col-xs-12">
             <div class="input-group">
+				<noindex>
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:search.suggest.input",
                     "search.input-default",
@@ -80,6 +82,7 @@
                 <span class="input-group-btn">
                                       <button class="btn btn-primary" type="submit">Искать</button>
                                     </span>
+				</noindex>
             </div>
         </div>
     </form>
@@ -101,6 +104,7 @@
     ),
         false
     ); ?>
+
 </div>
 <div class="show-xs show-sm btn-menu-mobile hidden-md hidden-lg">
     <div class="navbar  show-xs show-sm btn-menu-mobile" style="">
@@ -116,7 +120,6 @@
     </div>
 </div>    <!-- Everything you want hidden at 940px or less, place within here -->
 
-</div>
 <div class="wrap">
     <!-- header -->
     <header>
@@ -188,6 +191,13 @@
             ),
                 false
             ); ?>
+			<script type="text/javascript" src="//vk.com/js/api/openapi.js?154"></script>
+				
+				<!-- VK Widget -->
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 3, no_cover: 1, width: 262}, 165937914);
+				</script>
             <!--<form action="" id="newsletter-form">
                 <fieldset>
                     <div class="rowElem">

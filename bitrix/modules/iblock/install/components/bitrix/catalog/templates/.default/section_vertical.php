@@ -33,13 +33,13 @@ if ($isFilter || $isSidebar): ?>
 						"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 						"SECTION_ID" => $arCurSection['ID'],
 						"FILTER_NAME" => $arParams["FILTER_NAME"],
-						"PRICE_CODE" => $arParams["PRICE_CODE"],
+						"PRICE_CODE" => $arParams["~PRICE_CODE"],
 						"CACHE_TYPE" => $arParams["CACHE_TYPE"],
 						"CACHE_TIME" => $arParams["CACHE_TIME"],
 						"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
 						"SAVE_IN_SESSION" => "N",
 						"FILTER_VIEW_MODE" => $arParams["FILTER_VIEW_MODE"],
-						"XML_EXPORT" => "Y",
+						"XML_EXPORT" => "N",
 						"SECTION_TITLE" => "NAME",
 						"SECTION_DESCRIPTION" => "DESCRIPTION",
 						'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
@@ -59,20 +59,22 @@ if ($isFilter || $isSidebar): ?>
 			</div>
 		<? endif ?>
 		<? if ($isSidebar): ?>
-			<?
-			$APPLICATION->IncludeComponent(
-				"bitrix:main.include",
-				"",
-				Array(
-					"AREA_FILE_SHOW" => "file",
-					"PATH" => $arParams["SIDEBAR_PATH"],
-					"AREA_FILE_RECURSIVE" => "N",
-					"EDIT_MODE" => "html",
-				),
-				false,
-				array('HIDE_ICONS' => 'Y')
-			);
-			?>
+			<div class="hidden-xs">
+				<?
+				$APPLICATION->IncludeComponent(
+					"bitrix:main.include",
+					"",
+					Array(
+						"AREA_FILE_SHOW" => "file",
+						"PATH" => $arParams["SIDEBAR_PATH"],
+						"AREA_FILE_RECURSIVE" => "N",
+						"EDIT_MODE" => "html",
+					),
+					false,
+					array('HIDE_ICONS' => 'Y')
+				);
+				?>
+			</div>
 		<?endif?>
 	</div>
 <?endif?>
@@ -173,7 +175,7 @@ if ($isFilter || $isSidebar): ?>
 							'HIDE_NOT_AVAILABLE_OFFERS' => 'Y',
 							'PRODUCT_SUBSCRIPTION' => $arParams['PRODUCT_SUBSCRIPTION'],
 							'TEMPLATE_THEME' => $arParams['TEMPLATE_THEME'],
-							'PRICE_CODE' => $arParams['PRICE_CODE'],
+							'PRICE_CODE' => $arParams['~PRICE_CODE'],
 							'SHOW_PRICE_COUNT' => $arParams['SHOW_PRICE_COUNT'],
 							'PRICE_VAT_INCLUDE' => $arParams['PRICE_VAT_INCLUDE'],
 							'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
@@ -235,7 +237,7 @@ if ($isFilter || $isSidebar): ?>
 						"NAME" => $arParams["COMPARE_NAME"],
 						"DETAIL_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["element"],
 						"COMPARE_URL" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["compare"],
-						"ACTION_VARIABLE" => (!empty($arParams["ACTION_VARIABLE"]) ? $arParams["ACTION_VARIABLE"] : "action")."_ccl",
+						"ACTION_VARIABLE" => (!empty($arParams["ACTION_VARIABLE"]) ? $arParams["ACTION_VARIABLE"] : "action"),
 						"PRODUCT_ID_VARIABLE" => $arParams["PRODUCT_ID_VARIABLE"],
 						'POSITION_FIXED' => isset($arParams['COMPARE_POSITION_FIXED']) ? $arParams['COMPARE_POSITION_FIXED'] : '',
 						'POSITION' => isset($arParams['COMPARE_POSITION']) ? $arParams['COMPARE_POSITION'] : ''
@@ -281,7 +283,7 @@ if ($isFilter || $isSidebar): ?>
 					"DISPLAY_COMPARE" => $arParams["USE_COMPARE"],
 					"PAGE_ELEMENT_COUNT" => $arParams["PAGE_ELEMENT_COUNT"],
 					"LINE_ELEMENT_COUNT" => $arParams["LINE_ELEMENT_COUNT"],
-					"PRICE_CODE" => $arParams["PRICE_CODE"],
+					"PRICE_CODE" => $arParams["~PRICE_CODE"],
 					"USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
 					"SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
 
@@ -366,6 +368,7 @@ if ($isFilter || $isSidebar): ?>
 					'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
 					'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare'],
 					'COMPARE_NAME' => $arParams['COMPARE_NAME'],
+					'USE_COMPARE_LIST' => 'Y',
 					'BACKGROUND_IMAGE' => (isset($arParams['SECTION_BACKGROUND_IMAGE']) ? $arParams['SECTION_BACKGROUND_IMAGE'] : ''),
 					'COMPATIBLE_MODE' => (isset($arParams['COMPATIBLE_MODE']) ? $arParams['COMPATIBLE_MODE'] : ''),
 					'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : '')
@@ -414,7 +417,7 @@ if ($isFilter || $isSidebar): ?>
 								"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
 								"DISPLAY_COMPARE" => $arParams["USE_COMPARE"],
 								"PAGE_ELEMENT_COUNT" => 0,
-								"PRICE_CODE" => $arParams["PRICE_CODE"],
+								"PRICE_CODE" => $arParams["~PRICE_CODE"],
 								"USE_PRICE_COUNT" => $arParams["USE_PRICE_COUNT"],
 								"SHOW_PRICE_COUNT" => $arParams["SHOW_PRICE_COUNT"],
 
@@ -496,6 +499,7 @@ if ($isFilter || $isSidebar): ?>
 								'SHOW_CLOSE_POPUP' => isset($arParams['COMMON_SHOW_CLOSE_POPUP']) ? $arParams['COMMON_SHOW_CLOSE_POPUP'] : '',
 								'COMPARE_PATH' => $arResult['FOLDER'].$arResult['URL_TEMPLATES']['compare'],
 								'COMPARE_NAME' => $arParams['COMPARE_NAME'],
+								'USE_COMPARE_LIST' => 'Y',
 								'BACKGROUND_IMAGE' => '',
 								'DISABLE_INIT_JS_IN_COMPONENT' => (isset($arParams['DISABLE_INIT_JS_IN_COMPONENT']) ? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : '')
 							),

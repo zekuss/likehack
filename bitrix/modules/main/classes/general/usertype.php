@@ -905,6 +905,12 @@ class CUserTypeManager
 	var $arFieldsCache = array();
 	var $arRightsCache = array();
 
+	/**
+	 * @var null|array Stores relations of usertype ENTITY_ID to ORM entities. Aggregated by event main:onUserTypeEntityOrmMap.
+	 * @see CUserTypeManager::getEntityList()
+	 */
+	protected $entityList = null;
+
 	function CleanCache()
 	{
 		$this->arFieldsCache = array();
@@ -1241,6 +1247,38 @@ class CUserTypeManager
 		}
 
 		return $result;
+	}
+
+	/**
+	 * Aggregates entity map by event.
+	 * @return array [ENTITY_ID => 'SomeTable']
+	 */
+	function getEntityList()
+	{
+		if ($this->entityList === null)
+		{
+			$event = new \Bitrix\Main\Event('main', 'onUserTypeEntityOrmMap');
+			$event->send();
+
+			foreach ($event->getResults() as $eventResult)
+			{
+				if ($eventResult->getType() == \Bitrix\Main\EventResult::SUCCESS)
+				{
+					$result = $eventResult->getParameters(); // [ENTITY_ID => 'SomeTable']
+					foreach ($result as $entityId => $entityClass)
+					{
+						if (substr($entityClass, 0, 1) !== '\\')
+						{
+							$entityClass = '\\'.$entityClass;
+						}
+
+						$this->entityList[$entityId] = $entityClass;
+					}
+				}
+			}
+		}
+
+		return $this->entityList;
 	}
 
 	function OnAfterFetch($arUserField, $result)
@@ -1625,6 +1663,21 @@ class CUserTypeManager
 					$arFilter['<='.$fieldName] = $date;
 				}
 				continue;
+			}
+			elseif ($arUserField['SHOW_FILTER'] != 'N' && $arUserField['USER_TYPE']['BASE_TYPE'] == 'int')
+			{
+				switch ($arUserField['USER_TYPE_ID'])
+				{
+					case 'boolean':
+						if ($filterData[$fieldName] === 'Y')
+							$filterData[$fieldName] = 1;
+						if ($filterData[$fieldName] === 'N')
+							$filterData[$fieldName] = 0;
+						$value = $filterData[$fieldName];
+						break;
+					default:
+						$value = $filterData[$fieldName];
+				}
 			}
 			else
 			{
@@ -2216,6 +2269,18 @@ class CUserTypeManager
 		$event->send();
 
 		return $html;
+	}
+
+	public function getPublicText($userField)
+	{
+		$userType = $this->getUserType($userField['USER_TYPE_ID']);
+		if (!empty($userType['CLASS_NAME']) && is_callable(array($userType['CLASS_NAME'], 'getPublicText')))
+			return call_user_func_array(array($userType['CLASS_NAME'], 'getPublicText'), array($userField));
+
+		return join(', ', array_map(function ($v)
+		{
+			return is_null($v) || is_scalar($v) ? (string) $v : '';
+		}, (array) $userField['VALUE']));
 	}
 
 	function GetPublicEdit($arUserField, $arAdditionalParameters = array())

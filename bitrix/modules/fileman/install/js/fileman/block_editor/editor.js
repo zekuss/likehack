@@ -205,12 +205,15 @@ BXBlockEditor.prototype.initControls = function()
 	this.panelList['preview'].panel = BX.findChildByClassName(this.context, 'preview' + '-panel', true);
 	BX.bind(this.panelList['preview'].button, 'click', function(){_this.showPreview('preview');});
 
-	return;
+	var getHtmlBtn = this.context.querySelector('[data-role="block-editor-tab-btn-get-html"]');
+	BX.clipboard.bindCopyClick(getHtmlBtn, {'text': this.getContent.bind(this)});
 
+	/*
 	this.panelList['get-html'] = {};
 	this.panelList['get-html'].button = BX.findChildByClassName(this.context, 'bx-editor-block-btn-' + 'get-html', true);
 	this.panelList['get-html'].panel = BX.findChildByClassName(this.context, 'get-html' + '-panel', true);
 	BX.bind(this.panelList['get-html'].button, 'click', function(){_this.showHtml('get-html');});
+	*/
 
 };
 

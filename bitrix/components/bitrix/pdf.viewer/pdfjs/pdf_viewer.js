@@ -1743,6 +1743,7 @@ var PDFViewerApplication = {
     var eventBus = this.eventBus,
         _boundEvents = this._boundEvents;
 
+    this.unbindEvents();
     _boundEvents.beforePrint = this.beforePrint.bind(this);
     _boundEvents.afterPrint = this.afterPrint.bind(this);
     eventBus.on('resize', webViewerResize);
